@@ -8,6 +8,7 @@ nav {
     background-color: #141c2f;
     position: fixed;
     width: 100%;
+    z-index: 999;
 
     a {
         color: white;
@@ -19,6 +20,7 @@ nav {
 
     h1{
         margin-left: 100px;
+        font-size: 27px;
     }
 
     .last-letter {
@@ -29,6 +31,8 @@ nav {
         display: flex;
         gap: 29px;
         margin-right: 100px;
+        font-size: 23px;
+        font-weight: 400;
     }
 }
 
