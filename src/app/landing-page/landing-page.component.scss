@@ -1,0 +1,45 @@
+section {
+    width: 100%;
+    height: 802px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-screen {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2{
+       font-family: 'Fira Code'; 
+       font-size: 40px;
+       font-weight: 400;
+    }
+    h1 {
+        font-family: 'Karla';
+        font-size: 128px;
+        font-weight: 700;
+        
+    }
+}
+
+.btn-align {
+    margin-top: 24px;
+    display: flex;
+    gap: 48px;
+}
+
+.custom-button {
+    width: 172px;
+    height: 48px;
+    border: 1px solid #ffffff;
+    border-radius: 100px;
+    padding-left: 24px;
+    padding-right: 24px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
