@@ -2,12 +2,12 @@ nav {
     color: white;
     display: flex;
     justify-content: space-between;
-    padding-right: 100px;
-    padding-left: 60px;
     padding-top: 37px;
     padding-bottom: 37px;
     align-items: center;
     background-color: #141c2f;
+    position: fixed;
+    width: 100%;
 
     a {
         color: white;
@@ -16,13 +16,19 @@ nav {
             color: #70E61C;
         }
     }
+
+    h1{
+        margin-left: 100px;
+    }
+
+    .last-letter {
+        color: #70E61C;
+    }
+    
+    .menu {
+        display: flex;
+        gap: 29px;
+        margin-right: 100px;
+    }
 }
 
-.last-letter {
-    color: #70E61C;
-}
-
-.menu {
-    display: flex;
-    gap: 29px;
-}
