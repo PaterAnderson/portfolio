@@ -108,6 +108,7 @@ section {
     justify-content: center;
 
     img {
+        width: 8px;
         margin-bottom: 10px;
         animation: bounce 2s infinite; // Wende die Bounce-Animation an
     }
@@ -192,33 +193,42 @@ section {
     white-space: nowrap;
 }
 
-@keyframes float {
-    0% {
-        transform: translateX(100%); // Start bei 100% von rechts
-    }
-
-    100% {
-        transform: translateX(-100%); // Ende bei 100% von links
-    }
-}
-
 .floating-text {
     display: flex;
+    flex-direction: row-reverse;
     color: #3DCFB6;
-    gap: 56px;
-    width: 1440px;
+    width: 100%;
+    left: 100%;
     font-size: 26px;
     white-space: nowrap;
-    animation: float 26s linear infinite;
+    max-width: none;
+    animation: float 30s linear infinite;
     justify-content: space-evenly;
+    position: absolute;
+
+    p {
+        display: inline-block;
+        margin-left: 0;
+    }
+
+    &:nth-of-type(2) {
+        color: red;
+        animation: float 30s linear 15s infinite;
+    }
 }
+
+.spaced-item {
+    margin: 0 1.5em;
+}
+
 
 @keyframes float {
     0% {
-        transform: translateX(0%); // Start bei 100% von rechts
+        left: 100%;
     }
 
+
     100% {
-        transform: translateX(-100%); // Ende bei 100% von links
+        left: -100%
     }
 }
