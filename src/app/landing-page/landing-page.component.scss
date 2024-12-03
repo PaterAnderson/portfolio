@@ -86,6 +86,15 @@ section {
     position: absolute;
 }
 
+.box {
+    width: 30px;
+    height: 48px;
+    border-radius: 32px;
+    border: 1px solid #3DCFB6;
+    background-color: transparent;
+    margin-bottom: 23px;
+}
+
 .line1 {
     width: 0px;
     height: 240px;
@@ -103,5 +112,9 @@ section {
 }
 
 .left {
+    margin-left: 96px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-left: 96px;
 }
