@@ -101,7 +101,7 @@ section {
         
         // Hier fügen wir die Animation auf den Text an
         .button-text {
-            animation: moveInOut 2.5s linear infinite; // Animation aktivieren
+            animation: moveInOut 5.5s linear infinite; // Animation aktivieren
         }
     }
 }
@@ -117,7 +117,6 @@ section {
     0% {
         transform: translateX(150%);  // Start von links
     }
-
     100% {
         transform: translateX(-150%);    // Ende nach rechts
     }
