@@ -77,6 +77,15 @@ section {
     }
 }
 
+@keyframes bounce {
+    100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(10px); // Höheneinstellung der Animation
+    }
+}
+
 .links {
     display: flex;
     justify-content: space-between;
@@ -93,6 +102,13 @@ section {
     border: 1px solid #3DCFB6;
     background-color: transparent;
     margin-bottom: 23px;
+    display: flex;
+    justify-content: center;
+
+    img {
+        margin-bottom: 10px;
+        animation: bounce 2s infinite; // Wende die Bounce-Animation an
+    }
 }
 
 .line1 {
