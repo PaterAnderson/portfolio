@@ -1,11 +1,8 @@
-
-*{
+* {
     z-index: 3;
 }
 
 section {
-
-    background-size: cover; 
     width: 100%;
     height: 802px;
     display: flex;
@@ -19,58 +16,18 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-grow: 1; // Neu hinzugefügt
 
-    h2{
-       font-family: 'Fira Code'; 
-       font-size: 40px;
-       font-weight: 400;
+    h2 {
+        font-family: 'Fira Code';
+        font-size: 40px;
+        font-weight: 400;
     }
+
     h1 {
         font-family: 'Karla';
         font-size: 128px;
         font-weight: 700;
-        
-    }
-}
-
-.btn-align {
-    margin-top: 24px;
-    display: flex;
-    gap: 48px;
-}
-
-
-*{
-    z-index: 3;
-}
-
-section {
-
-    background-size: cover; 
-    width: 100%;
-    height: 802px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.title-screen {
-    background-color: transparent;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    h2{
-       font-family: 'Fira Code'; 
-       font-size: 40px;
-       font-weight: 400;
-    }
-    h1 {
-        font-family: 'Karla';
-        font-size: 128px;
-        font-weight: 700;
-        
     }
 }
 
@@ -93,31 +50,58 @@ section {
     font-weight: 400;
     font-family: 'Karla';
     cursor: pointer;
-    overflow: hidden; // Um den Effekt sauber zu halten
-    position: relative; // Um Positionierung für das innere Element zu ermöglichen
-    
+    overflow: hidden;
+    position: relative;
+
     &:hover {
         border: 1px solid #3DCFB6;
-        
-        // Hier fügen wir die Animation auf den Text an
+
         .button-text {
-            animation: moveInOut 5.5s linear infinite; // Animation aktivieren
+            animation: moveInOut 5.5s linear infinite;
         }
     }
 }
 
-// Text innerhalb des Buttons
 .button-text {
-    position: relative; 
-    display: inline-block; // Für die Animation
+    position: relative;
+    display: inline-block;
 }
 
-// Keyframes für die Animation
 @keyframes moveInOut {
     0% {
-        transform: translateX(150%);  // Start von links
+        transform: translateX(150%);
     }
+
     100% {
-        transform: translateX(-150%);    // Ende nach rechts
+        transform: translateX(-150%);
     }
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    margin-top: 588px;
+    position: absolute;
+}
+
+.line1 {
+    width: 0px;
+    height: 240px;
+    border-left: 1px solid #3DCFB6;
+}
+
+.line2 {
+    width: 0px;
+    height: 186px;
+    border-left: 1px solid #ffffff;
+}
+
+.right {
+    margin-right: 96px;
+}
+
+.left {
+    margin-left: 96px;
 }
