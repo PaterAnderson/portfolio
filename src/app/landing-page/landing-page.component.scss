@@ -209,13 +209,13 @@ section {
     width: 1440px;
     font-size: 26px;
     white-space: nowrap;
-    animation: _ngcontent-ng-c921951802_float 15s linear infinite;
+    animation: float 26s linear infinite;
     justify-content: space-evenly;
 }
 
 @keyframes float {
     0% {
-        transform: translateX(100%); // Start bei 100% von rechts
+        transform: translateX(0%); // Start bei 100% von rechts
     }
 
     100% {
