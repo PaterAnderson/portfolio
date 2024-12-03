@@ -81,6 +81,7 @@ section {
     100% {
         transform: translateY(0px);
     }
+
     50% {
         transform: translateY(10px); // Höheneinstellung der Animation
     }
@@ -125,12 +126,47 @@ section {
 
 .right {
     margin-right: 96px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
 }
 
 .left {
-    margin-left: 96px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: 96px;
+}
+
+.mail {
+    display: flex;
+    gap: 12px;
+    transform: rotate(270deg);
+    position: absolute;
+    bottom: 327px;
+
+    img {
+        width: 26px;
+        transform: rotate(90deg);
+
+        &:hover {
+            cursor: pointer;
+            filter: brightness(0) saturate(100%) invert(1);
+        }
+    }
+}
+
+
+.email-container {
+    a {
+        color: white;
+        text-decoration: none;
+        font-family: 'Karla';
+        font-size: 18px;
+
+        &:hover {
+            color: #3DCFB6;
+        }
+    }
 }
