@@ -5,7 +5,9 @@
             <div class="center">
                 <h1>Skill Set</h1>
                 <p>My journey has involved working on diverse projects, employing a range of frontend technologies and
-                    concepts. With my extensive experience in web design, I am particularly well-equipped to tackle a diverse range of tasks. I am open to embracing new technologies and methodologies to Continously enhance my skills
+                    concepts. With my extensive experience in web design, I am particularly well-equipped to tackle a
+                    diverse range of tasks. I am open to embracing new technologies and methodologies to Continously
+                    enhance my skills
                     and stay ahead in the ever-evolving landscape of web development.
                 </p>
                 <h2>
@@ -17,6 +19,12 @@
                     <button class="custom-button"><span class="button-text">Let's Talk</span></button>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="skills">
+        <div class="image-item" *ngFor="let image of images">
+            <img [src]="image.src" alt="{{ image.word }}" />
+            <p>{{ image.word }}</p>
         </div>
     </div>
 </section>
