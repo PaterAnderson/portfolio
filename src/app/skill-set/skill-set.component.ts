@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './skill-set.component.html',
-  styleUrl: './skill-set.component.scss'
+  styleUrls: ['./skill-set.component.scss']
 })
 export class SkillSetComponent {
   images = [
@@ -21,4 +21,21 @@ export class SkillSetComponent {
     { src: '/assets/img/ico/api.svg', word: 'Rest-Api' },
     { src: '/assets/img/ico/scrum.svg', word: 'Scrum' },
     { src: '/assets/img/ico/growth.svg', word: 'Growth mindset' },
-  ];}
+  ];
+
+  interests = [
+    { src: '/assets/img/ico/interests/react.svg', word: 'React' },
+    { src: '/assets/img/ico/interests/vue.svg', word: 'Vue Js' }, 
+  ];
+  
+  isInfoVisible = false;
+  currentHoverIndex: number | null = null;
+
+  showInfo(index: number) {
+    this.currentHoverIndex = index;
+  }
+  
+  hideInfo() {
+    this.currentHoverIndex = null;
+  }
+}
