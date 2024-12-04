@@ -1,0 +1,124 @@
+section {
+    width: 100%;
+    height: 695px;
+    background: radial-gradient(22.43% 43.85% at 1.22% 52.45%, rgb(8, 70, 59) 0%, #1C1C1C 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+    font-family: 'Karla';
+    color: white;
+}
+
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #3DCFB6;
+}
+
+.container {
+    width: 520px;
+    height: 503px;
+    padding: 32px 0 0 0;
+    gap: 40px;
+    border-radius: 30px 30px 30px 30px;
+    border: 1px solid #3DCFB6;
+    background: rgba(61, 207, 182, 0.1);
+    backdrop-filter: blur(4px);
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+        font-family: 'Fira Code';
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 64px;
+        letter-spacing: -0.03em;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #3DCFB6;
+        margin-bottom: 32px;
+
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 21.6px;
+        text-align: justified;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+    }
+}
+
+.center {
+    width: 456px;
+
+    margin-left: 24px;
+
+    h2 {
+        font-family: 'Fira Code';
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28.8px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        margin-bottom: 18px;
+
+        .highlight {
+            color: #3DCFB6;
+        }
+    }
+
+    p {
+        margin-bottom: 32px;
+    }
+}
+
+.btn-align {
+    margin-top: 24px;
+    display: flex;
+    gap: 48px;
+}
+
+.custom-button {
+    background-color: transparent;
+    width: 172px;
+    height: 48px;
+    border: 1px solid #ffffff;
+    border-radius: 100px;
+    padding-left: 24px;
+    padding-right: 24px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Karla';
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+
+    &:hover {
+        border: 1px solid #3DCFB6;
+
+        .button-text {
+            animation: moveInOut 5.5s linear infinite;
+        }
+    }
+}
+
+.button-text {
+    position: relative;
+    display: inline-block;
+}
+
+@keyframes moveInOut {
+    0% {
+        transform: translateX(150%);
+    }
+
+    100% {
+        transform: translateX(-150%);
+    }
+}
