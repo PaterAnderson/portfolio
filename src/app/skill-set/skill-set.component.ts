@@ -32,10 +32,14 @@ export class SkillSetComponent {
   currentHoverIndex: number | null = null;
 
   showInfo(index: number) {
-    this.currentHoverIndex = index;
+    if (index === this.images.length - 1) {
+      this.isInfoVisible = true;
+    } else {
+      this.isInfoVisible = false;
+    }
   }
   
   hideInfo() {
-    this.currentHoverIndex = null;
+    this.isInfoVisible = false; 
   }
 }

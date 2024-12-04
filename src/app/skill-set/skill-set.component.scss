@@ -155,6 +155,7 @@ section {
 
         &:hover {
             transform: scale(1.1);
+            cursor: pointer;
         }
     }
 
@@ -172,6 +173,7 @@ section {
     background-color: white;
     border-radius: 16px;
     top: 210px;
+    left: 320px;
     opacity: 1;
     z-index: 10;
     display: flex;
@@ -185,10 +187,6 @@ section {
 .info-window img {
     width: 30px;
     height: 30px;
-
-    &:hover {
-        cursor: pointer;
-    }
 }
 
 .interests {
@@ -210,4 +208,11 @@ section {
     img{
         width: 32px;
     }
+}
+
+.bubble {
+    position: absolute;
+    top: 338px;
+    left: 391px;
+    z-index: 999;
 }

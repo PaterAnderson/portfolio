@@ -25,8 +25,8 @@
         <div class="image-item" *ngFor="let image of images; let i = index">
             <img [src]="image.src" alt="{{ image.word }}" (mouseenter)="showInfo(i)" (mouseleave)="hideInfo()" />
             <p>{{ image.word }}</p>
-        
-            <div class="info-window" *ngIf="currentHoverIndex === i">
+
+            <div class="info-window" *ngIf="isInfoVisible && i === images.length - 1">
                 <p>I have a special interest in learning</p>
                 <div class="info-images">
                     <div class="info-align" *ngFor="let infoImage of interests">
@@ -35,6 +35,9 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div *ngIf="isInfoVisible">
+            <img class="bubble" src="/assets/img/ico/bubble.svg">
         </div>
     </div>
 </section>
