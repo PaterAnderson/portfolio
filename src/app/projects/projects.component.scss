@@ -1,0 +1,49 @@
+section {
+    width: 100%;
+    height: 581px;
+    background: #1C1C1C;
+    font-family: 'Karla';
+}
+
+.description-box {
+    width: 880px;
+    height: 565px;
+    background-color: antiquewhite;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    h2 {
+        font-family: 'Karla';
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28.06px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+
+    h1 {
+        font-family: 'Fira Code';
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 64px;
+        letter-spacing: -0.03em;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+
+    p {
+        font-size: 18px;
+        width: 456px;
+        margin-top: 8px;
+    }
+}
+
+.seperator {
+    border-top: 1px solid #3DCFB6 ;
+}
