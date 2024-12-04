@@ -1,6 +1,86 @@
-* {
+
+section {
     width: 100%;
     height: 996px;
     margin-top: 49px;
     background: #1C1C1C;
+    font-family: 'Karla';
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    img {
+        width: 568px;
+        height: 568px;
+    }
+
+    h2 {
+        font-size: 24px;
+        color: #3DCFB6;
+    }
+
+    h1 {
+        font-family: Fira Code;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 64px;
+        letter-spacing: -0.03em;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #3DCFB6;
+        margin-left: 24px;
+    }
+}
+
+.align {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container {
+    width: 568px;
+    height: auto;
+    padding: 32px 0 0 0;
+    gap: 40px;
+    border-radius: 30px 30px 30px 30px;
+    border: 1px solid #3DCFB6;
+    background: rgba(61, 207, 182, 0.1);
+    backdrop-filter: blur(4px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    img {
+        width: 32px;
+        height: 32px;
+        margin-right: 24px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.center {
+    width: 504px;
+    margin-left: 24px;
+
+    p {
+        margin-bottom: 24px;
+    }
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 70px;
 }
