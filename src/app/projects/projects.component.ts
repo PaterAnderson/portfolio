@@ -15,21 +15,23 @@ export class ProjectsComponent {
     {
       title: 'Join',
       description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
-      technologies: ['Angular', 'TypeScript'],
+      technologies: ['Angular', 'TypeScript','HTML','CSS','Firebase'],
       imageUrl: '/assets/img/projects/join_b.png',
+      previewImageUrl: '/assets/img/projects/join.png',
       technologiesWithIcons: [
+        { name: 'HTML', icon: '/assets/img/deco/html.svg' },
+        { name: 'CSS', icon: '/assets/img/deco/css.svg' },
+        { name: 'Firebase', icon: '/assets/img/deco/firebase.svg' },
         { name: 'Angular', icon: '/assets/img/deco/angular.svg' },
         { name: 'TypeScript', icon: '/assets/img/deco/ts.svg' },
-        { name: 'CSS', icon: '/assets/img/deco/css.svg' },
-        { name: 'HTML', icon: '/assets/img/deco/html.svg' },
-        { name: 'Firebase', icon: '/assets/img/deco/firebase.svg' }
       ]
     },
     {
       title: 'Sharkie',
-      description: 'A fun little game to keep you engaged.',
+      description: 'Can you collect enough treasure and potions to transform your shark into a fierce warrior capable of taking on the orca?',
       technologies: ['HTML', 'CSS', 'JavaScript'],
-      imageUrl: '/assets/img/projects/join_b.png',
+      imageUrl: '/assets/img/projects/sharkie_b.png',
+      previewImageUrl: '/assets/img/projects/sharkie.png',
       technologiesWithIcons: [
         { name: 'HTML', icon: '/assets/img/deco/html.svg' },
         { name: 'CSS', icon: '/assets/img/deco/css.svg' },
@@ -37,10 +39,11 @@ export class ProjectsComponent {
       ]
     },
     {
-      title: 'Pokedex',
-      description: 'A Pokédex application that allows you to view Pokémon information.',
+      title: 'Pokédex',
+      description: 'A Pokédex application that allows you to view detailed Pokémon information, utilizing data sourced from the comprehensive PokéAPI for accurate and up-to-date stats, abilities, and more.',
       technologies: ['HTML', 'CSS', 'JavaScript'],
-      imageUrl: '/assets/img/projects/join_b.png',
+      imageUrl: '/assets/img/projects/pokedex_b.png',
+      previewImageUrl: '/assets/img/projects/pokedex.png',
       technologiesWithIcons: [
         { name: 'HTML', icon: '/assets/img/deco/html.svg' },
         { name: 'CSS', icon: '/assets/img/deco/css.svg' },

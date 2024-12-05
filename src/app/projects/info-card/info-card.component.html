@@ -2,28 +2,29 @@
     <div class="information">
         <div class="headline">
             <h1>{{ selectedProjectIndex !== null ? (selectedProjectIndex + 1).toString().padStart(2, '0') : '' }}</h1>
-            <h2>{{ project.title }}</h2> 
+            <h2>{{ project.title }}</h2>
         </div>
         <div class="about">
             <h3>What is this project about?</h3>
-            <p>{{ project.description }}</p> 
+            <p>{{ project.description }}</p>
             <div class="languages">
                 <div class="language" *ngFor="let tech of project.technologiesWithIcons">
                     <img [src]="tech.icon" alt="{{ tech.name }}">
                     <span>{{ tech.name }}</span>
                 </div>
             </div>
-            <div class="btn">
-                <button class="custom-button">
-                    <span class="button-text">GitHub</span>
-                    <img src="/assets/img/ico/arrow_out_g.svg" alt="Arrow Icon" class="button-icon">
-                </button>
-                <button class="custom-button">
-                    <span class="button-text">Live Test</span>
-                    <img src="/assets/img/ico/arrow_out_g.svg" alt="Arrow Icon" class="button-icon">
-                </button>
-            </div>
         </div>
+        <div class="btn">
+            <button class="custom-button">
+                <span class="button-text">GitHub</span>
+                <img src="/assets/img/ico/arrow_out_g.svg" alt="Arrow Icon" class="button-icon">
+            </button>
+            <button class="custom-button">
+                <span class="button-text">Live Test</span>
+                <img src="/assets/img/ico/arrow_out_g.svg" alt="Arrow Icon" class="button-icon">
+            </button>
+        </div>
+
     </div>
     <div class="right-side">
         <button class="close" (click)="onClose()">

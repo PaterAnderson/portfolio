@@ -22,7 +22,7 @@
                             <span *ngFor="let tech of project.technologies">{{ tech }}</span>
                         </p>
                         <div class="project-image" *ngIf="showImage === project.imageUrl">
-                            <img [src]="project.imageUrl" alt="{{ project.title }} Image" />
+                            <img [src]="project.previewImageUrl" alt="{{ project.title }} Image" />
                             <img src="/assets/img/deco/lines.svg">
                         </div>
                     </div>
