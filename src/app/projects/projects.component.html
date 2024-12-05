@@ -8,8 +8,9 @@
 
         <div>
             <div class="seperator"></div>
-            <div class="template" *ngFor="let project of projects">
-                <div class="project" (mouseenter)="showImage = project.imageUrl" (mouseleave)="project.imageUrl">
+            <div class="template" *ngFor="let project of projects, let i = index">
+                <div class="project" (mouseenter)="showImage = project.imageUrl" (mouseleave)="showImage = ''"
+                    (click)="openInfoCard(project, i)">
                     <div class="content">
                         <div class="title-with-image">
                             <h3>{{ project.title }}</h3>
@@ -28,9 +29,13 @@
                 </div>
                 <div class="seperator"></div>
             </div>
+
+            <div class="overlay" *ngIf="showOverlay">
+                <app-info-card *ngIf="showOverlay && selectedProject" [project]="selectedProject"
+                    [selectedProjectIndex]="selectedProjectIndex" [projects]="projects" (close)="closeInfoCard()"
+                    (next)="updateSelectedProject($event)">
+                </app-info-card>
+            </div>
         </div>
-
-
-
     </div>
 </section>
