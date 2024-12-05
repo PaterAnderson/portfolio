@@ -8,7 +8,8 @@ section {
 .description-box {
     width: 880px;
     height: 565px;
-    background-color: antiquewhite;
+    margin-left: 96px;
+    color: white;
 }
 
 .description {
@@ -24,6 +25,7 @@ section {
         text-align: left;
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
+        color: #3DCFB6;
     }
 
     h1 {
@@ -35,13 +37,21 @@ section {
         text-align: left;
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
+        color: #3DCFB6;
     }
 
     p {
         font-size: 18px;
         width: 456px;
         margin-top: 8px;
+        margin-bottom: 41px;
     }
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .seperator {
@@ -50,6 +60,10 @@ section {
 
 .project {
 
+    padding-top: 40px;   
+    padding-right: 32px;
+    padding-bottom: 40px; 
+    padding-left: 32px;   
 
     h3 {
         font-family: 'Fira Code';
@@ -60,6 +74,10 @@ section {
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
 
+    }
+    &:hover {
+        cursor: pointer;
+        background: #3DCFB64D;
     }
 }
 
