@@ -108,6 +108,18 @@ section {
     img {
         border-radius: 16px;
     }
+
+    img:nth-child(1) { 
+        position: relative; 
+        z-index: 2; 
+    }
+
+    img:nth-child(2) { 
+        position: absolute; 
+        left: 24px;
+        top: 20px;
+        z-index: 1; 
+    }
 }
 
 .title-with-image {
