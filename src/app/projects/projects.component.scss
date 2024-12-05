@@ -45,5 +45,38 @@ section {
 }
 
 .seperator {
-    border-top: 1px solid #3DCFB6 ;
+    border-top: 1px solid #3DCFB6;
+}
+
+.project {
+
+
+    h3 {
+        font-family: 'Fira Code';
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28.8px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+    }
+}
+
+.technologies {
+    display: flex;
+    width: 354px;
+
+    span {
+        line-height: 21.6px;
+        font-size: 18px;
+        &:not(:first-child):before {
+            content: "|";
+            margin-right: 5px;
+            margin-left: 5px;
+            color: #3DCFB6;
+            width: 6px;
+            height: 22px;
+        }
+    }
 }
