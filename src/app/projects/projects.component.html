@@ -1,57 +1,19 @@
 <section>
     <div class="description-box">
-
-
         <div class="description">
             <h2>Portfolio</h2>
             <h1>Featured Projects</h1>
             <p>Explore a selection of my work here - Interact with projects to see my skills in action.</p>
         </div>
 
-
-
         <div>
             <div class="seperator"></div>
-            <div class="template">
+            <div class="template" *ngFor="let project of projects">
                 <div class="project">
                     <div class="content">
-                        <h3>Join</h3>
+                        <h3>{{ project.title }}</h3>
                         <p class="technologies">
-                            <span>Angular</span>
-                            <span>TypeScript</span>
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>Firebase</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="seperator"></div>
-            </div>
-            <div class="template">
-                <div class="project">
-                    <div class="content">
-                        <h3>Join</h3>
-                        <p class="technologies">
-                            <span>Angular</span>
-                            <span>TypeScript</span>
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>Firebase</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="seperator"></div>
-            </div>
-            <div class="template">
-                <div class="project">
-                    <div class="content">
-                        <h3>Join</h3>
-                        <p class="technologies">
-                            <span>Angular</span>
-                            <span>TypeScript</span>
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>Firebase</span>
+                            <span *ngFor="let tech of project.technologies">{{ tech }}</span>
                         </p>
                     </div>
                 </div>
