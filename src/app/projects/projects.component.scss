@@ -60,10 +60,10 @@ section {
 
 .project {
 
-    padding-top: 40px;   
+    padding-top: 40px;
     padding-right: 32px;
-    padding-bottom: 40px; 
-    padding-left: 32px;   
+    padding-bottom: 40px;
+    padding-left: 32px;
 
     h3 {
         font-family: 'Fira Code';
@@ -75,6 +75,7 @@ section {
         text-decoration-skip-ink: none;
 
     }
+
     &:hover {
         cursor: pointer;
         background: #3DCFB64D;
@@ -88,6 +89,7 @@ section {
     span {
         line-height: 21.6px;
         font-size: 18px;
+
         &:not(:first-child):before {
             content: "|";
             margin-right: 5px;
@@ -96,5 +98,40 @@ section {
             width: 6px;
             height: 22px;
         }
+    }
+}
+
+.project-image {
+    position: absolute;
+    left: 1100px;
+
+    img {
+        border-radius: 16px;
+    }
+}
+
+.title-with-image {
+    display: flex;
+    align-items: center;
+}
+
+.static-image {
+
+    img {
+        margin-left: 16px;
+        transform: scale(0.9);
+        animation: fadeIn 1s forwards;
+    }
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
     }
 }

@@ -9,12 +9,20 @@
         <div>
             <div class="seperator"></div>
             <div class="template" *ngFor="let project of projects">
-                <div class="project">
+                <div class="project" (mouseenter)="showImage = project.imageUrl" (mouseleave)="project.imageUrl">
                     <div class="content">
-                        <h3>{{ project.title }}</h3>
+                        <div class="title-with-image">
+                            <h3>{{ project.title }}</h3>
+                            <div class="static-image" *ngIf="showImage === project.imageUrl">
+                                <img src="assets/img/ico/arrow_out.svg" alt="Static Image" />
+                            </div>
+                        </div>
                         <p class="technologies">
                             <span *ngFor="let tech of project.technologies">{{ tech }}</span>
                         </p>
+                        <div class="project-image" *ngIf="showImage === project.imageUrl">
+                            <img [src]="project.imageUrl" alt="{{ project.title }} Image" />
+                        </div>
                     </div>
                 </div>
                 <div class="seperator"></div>
