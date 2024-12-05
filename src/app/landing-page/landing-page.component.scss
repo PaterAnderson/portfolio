@@ -17,7 +17,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-grow: 1; // Neu hinzugefügt
+    flex-grow: 1;
 
     h2 {
         font-family: 'Fira Code';
@@ -84,7 +84,7 @@ section {
     }
 
     50% {
-        transform: translateY(10px); // Höheneinstellung der Animation
+        transform: translateY(10px);
     }
 }
 
@@ -110,7 +110,7 @@ section {
     img {
         width: 8px;
         margin-bottom: 10px;
-        animation: bounce 2s infinite; // Wende die Bounce-Animation an
+        animation: bounce 2s infinite;
     }
 }
 
@@ -179,11 +179,10 @@ section {
     top: 737.77px;
     overflow: hidden;
     transform: rotate(357deg);
-
 }
 
 .message-bar {
-    width: 100%;
+    width: calc(200%); 
     padding: 12px 32px;
     color: white;
     font-family: "Karla";
@@ -191,29 +190,26 @@ section {
     height: 30px;
     background-color: #383838;
     white-space: nowrap;
+    display: flex;
 }
 
 .floating-text {
-    display: flex;
-    flex-direction: row-reverse;
     color: #3DCFB6;
-    width: 100%;
-    left: 100%;
     font-size: 26px;
     white-space: nowrap;
     max-width: none;
-    animation: float 30s linear infinite;
-    justify-content: space-evenly;
-    position: absolute;
-
+    
     p {
         display: inline-block;
         margin-left: 0;
     }
 
+    &:nth-of-type(1) {
+        animation: float 30s linear infinite;
+    }
+
     &:nth-of-type(2) {
-        color: red;
-        animation: float 30s linear 15s infinite;
+        animation: float 30s linear infinite;
     }
 }
 
@@ -221,14 +217,11 @@ section {
     margin: 0 1.5em;
 }
 
-
 @keyframes float {
     0% {
-        left: 100%;
+        transform: translateX(0);
     }
-
-
     100% {
-        left: -100%
+        transform: translateX(-100%);
     }
 }
