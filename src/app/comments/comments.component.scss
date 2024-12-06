@@ -52,12 +52,12 @@ section {
 
     &.moving {
         transition: transform 0.5s ease;
-        transform: translateX(100%); // Die Bewegung nach rechts
+        transform: translateX(-107%); // Die Bewegung nach rechts
     }
 }
 
 .content {
-    padding: 48px 40px;
+    gap: 44px;
     display: flex;
     flex-direction: column;
     padding: 48px 40px 48px 40px;

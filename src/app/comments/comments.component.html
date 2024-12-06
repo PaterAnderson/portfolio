@@ -1,34 +1,31 @@
 <section>
     <div class="comments">
-      <h1>What my colleagues say about me</h1>
-      <div class="card-section">
-        <div 
-          class="card" 
-          *ngFor="let card of displayedCards; let i = index"
-          [ngClass]="{'active': i === 2, 'moving': isMoving}">
-          <div class="content">
-            <p>{{ card.text }}</p>
-            <div class="name">
-              <hr>
-              <p>{{ card.name }}</p>
+        <h1>What my colleagues say about me</h1>
+        <div class="card-section">
+            <div 
+                class="card" 
+                *ngFor="let card of displayedCards; let i = index"
+                [ngClass]="{'active': i === 2, 'moving': isMoving}">
+                <div class="content">
+                    <p>{{ card.text }}</p>
+                    <div class="name">
+                        <hr>
+                        <p>{{ card.name }}</p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    
-      <div class="navigation">
-        <button class="previous" (click)="previousCard()">
-          <img src="/assets/img/ico/arrow_b_w.svg">
-        </button>
-    
-        <div class="dots">
-          <span *ngFor="let card of cards; let i = index" 
-                [ngClass]="{'active': i === currentIndex}">•</span>
+        <div class="navigation">
+            <button class="previous" (click)="previousCard()">
+                <img src="/assets/img/ico/arrow_b_w.svg">
+            </button>
+            <div class="dots">
+                <span *ngFor="let card of cards; let i = index" 
+                      [ngClass]="{'active': i === currentIndex}">•</span>
+            </div>
+            <button class="next" (click)="nextCard()">
+                <img src="/assets/img/ico/arrow_f_w.svg">
+            </button>
         </div>
-    
-        <button class="next" (click)="nextCard()">
-          <img src="/assets/img/ico/arrow_f_w.svg">
-        </button>
-      </div>
     </div>
-  </section>
+</section>
