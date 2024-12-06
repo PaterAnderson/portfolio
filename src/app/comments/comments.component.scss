@@ -1,12 +1,20 @@
 section {
     width: 100%;
-    height: 452px;
-    background-color: blanchedalmond;
-    font-family: 'Karla';
+    height: 596px;
+    color: white;
+    font-family: "Karla";
+    background: #1C1C1C;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 .comments {
-
+    height: 452px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 
     h1 {
         font-family: 'Fira Code';
@@ -15,5 +23,92 @@ section {
         line-height: 41.98px;
         text-align: left;
         color: #3DCFB6;
+    }
+}
+
+
+.card-section {
+    width: 100%;
+    height: 274px;
+    gap: 44px;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 632px;
+    height: 248px;
+    gap: 44px;
+    border-radius: 32px;
+    border: 1px solid #3DCFB6;
+    background-color: #3DCFB64D;
+
+}
+
+.content {
+    padding: 48px 40px 48px 40px;
+    gap: 44px;
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+
+    hr {
+        width: 320px;
+        margin-right: 16px;
+    }
+}
+
+.seperator {
+    border-top: 1px solid #3DCFB6;
+}
+
+
+.navigation {
+    width: 184px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+
+    button {
+        background-color: transparent;
+        border: none;
+        transition: transform 0.3s ease;
+    }
+
+}
+
+.dots {
+    width: 104px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    margin-left: 8px;
+    margin-right: 8px;
+
+    span {
+        font-size: 24px;
+        font-weight: bold;
+    }
+}
+
+.next {
+    &:hover {
+        cursor: pointer;
+        transform: translate(5px) scale(1.1);
+        filter: invert(54%) sepia(25%) saturate(2154%) hue-rotate(130deg);
+    }
+}
+
+.previous {
+    &:hover {
+        cursor: pointer;
+        transform: translate(-5px) scale(1.1);
+        filter: invert(54%) sepia(25%) saturate(2154%) hue-rotate(130deg);
     }
 }
