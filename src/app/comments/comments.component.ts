@@ -25,10 +25,11 @@ export class CommentsComponent {
   ];
 
   currentIndex = 0;
+  isMoving = false;
 
   get displayedCards() {
     const totalCards = this.cards.length;
-    const cardsToShow = Math.min(3, totalCards); // Anzahl der anzuzeigenden Karten nicht größer als die Anzahl der verfügbaren Karten
+    const cardsToShow = Math.min(3, totalCards);
     const displayedCards = [];
 
     for (let i = 0; i < cardsToShow; i++) {
@@ -40,10 +41,18 @@ export class CommentsComponent {
   }
 
   nextCard() {
-    this.currentIndex = (this.currentIndex + 1) % this.cards.length;
+    this.isMoving = true; // Start der Bewegung
+    setTimeout(() => {
+      this.currentIndex = (this.currentIndex + 1) % this.cards.length;
+      this.isMoving = false; // Beenden der Bewegung
+    }, 500); // Die Dauer der Animation, sollte mit dem CSS übereinstimmen
   }
 
   previousCard() {
-    this.currentIndex = (this.currentIndex - 1 + this.cards.length) % this.cards.length;
+    this.isMoving = true; // Start der Bewegung
+    setTimeout(() => {
+      this.currentIndex = (this.currentIndex - 1 + this.cards.length) % this.cards.length;
+      this.isMoving = false; // Beenden der Bewegung
+    }, 500); // Die Dauer der Animation
   }
 }

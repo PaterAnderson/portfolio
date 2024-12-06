@@ -39,15 +39,20 @@ section {
 }
 
 .card {
-    width: 632px; // Feste Breite der Karte
-    height: 248px; // Feste Höhe der Karte
+    width: 632px; 
+    height: 248px; 
     border-radius: 32px;
     border: 1px solid #3DCFB6;
     background-color: #3DCFB64D;
-    transition: height 0.3s ease, transform 0.3s ease; // Übergang für Höhe und Transformation
+    transition: height 0.3s ease, transform 0.3s ease;
 
     &.active {
         transform: scaleY(1.10);
+    }
+
+    &.moving {
+        transition: transform 0.5s ease;
+        transform: translateX(100%); // Die Bewegung nach rechts
     }
 }
 
