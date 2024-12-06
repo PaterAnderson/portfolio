@@ -24,35 +24,39 @@ export class CommentsComponent {
     },
   ];
 
-  currentIndex = 0;
-  isMoving = false;
+  currentIndex = 0; 
+  isMoving = false; 
 
   get displayedCards() {
-    const totalCards = this.cards.length;
-    const cardsToShow = Math.min(3, totalCards);
-    const displayedCards = [];
-
-    for (let i = 0; i < cardsToShow; i++) {
-      const index = (this.currentIndex + i) % totalCards;
-      displayedCards.push(this.cards[index]);
-    }
-
-    return displayedCards;
-  }
+    const cardCount = this.cards.length;
+    const indices = [
+        (this.currentIndex - 2 + cardCount) % cardCount, // 2 vor
+        (this.currentIndex - 1 + cardCount) % cardCount, // 1 vor
+        this.currentIndex,                                 // Aktuelle Karte
+        (this.currentIndex + 1) % cardCount,             // 1 nach
+        (this.currentIndex + 2) % cardCount              // 2 nach
+    ];
+    
+    return indices.map(i => this.cards[i]);
+}
 
   nextCard() {
-    this.isMoving = true; // Start der Bewegung
-    setTimeout(() => {
-      this.currentIndex = (this.currentIndex + 1) % this.cards.length;
-      this.isMoving = false; // Beenden der Bewegung
-    }, 500); // Die Dauer der Animation, sollte mit dem CSS übereinstimmen
+    if (!this.isMoving) {
+      this.isMoving = true; 
+      setTimeout(() => {
+        this.currentIndex = (this.currentIndex + 1) % this.cards.length; 
+        this.isMoving = false; 
+      }, 1000); 
+    }
   }
 
   previousCard() {
-    this.isMoving = true; // Start der Bewegung
-    setTimeout(() => {
-      this.currentIndex = (this.currentIndex - 1 + this.cards.length) % this.cards.length;
-      this.isMoving = false; // Beenden der Bewegung
-    }, 500); // Die Dauer der Animation
+    if (!this.isMoving) {
+      this.isMoving = true; 
+      setTimeout(() => {
+        this.currentIndex = (this.currentIndex - 1 + this.cards.length) % this.cards.length; 
+        this.isMoving = false; 
+      }, 1000); 
+    }
   }
 }
