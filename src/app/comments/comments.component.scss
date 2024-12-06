@@ -53,14 +53,16 @@ section {
     animation: moveRight 0.4s ease forwards;
 }
 
-// Anpassen der Styles für die Karten
 .card-section {
     width: 100%;
     height: 274px;
     display: flex;
     justify-content: center;
     position: relative;
-    overflow: hidden; // Verhindert Überlauf
+    overflow: hidden;
+    gap: 84px;
+    background: linear-gradient(90deg, #1C1C1C 0%, rgba(28, 28, 28, 0) 10%, rgba(28, 28, 28, 0) 90%, #1C1C1C 100%);
+
 }
 
 .card {
@@ -70,7 +72,8 @@ section {
     border: 1px solid #3DCFB6;
     background-color: #3DCFB64D;
     transition: 0.5s ease;
-    opacity: 1; // Karten sind zuerst sichtbar
+    opacity: 1; 
+    
 }
 
 .content {
@@ -135,4 +138,11 @@ section {
         cursor: pointer;
         filter: invert(54%) sepia(25%) saturate(2154%) hue-rotate(130deg);
     }
+}
+
+.quote {
+    position: absolute;
+    top: 3348px;
+    left: 349px;
+    z-index: 1;
 }
