@@ -6,57 +6,61 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './comments.component.html',
-  styleUrl: './comments.component.scss'
+  styleUrls: ['./comments.component.scss']
 })
 export class CommentsComponent {
-  cards = [
+  currentCommentIndex: number = 0;
+  animationClass: string = '';
+
+  comments = [
     {
-      text: "I want to recognize my colleague in the frontend team for their outstanding contributions. Their eye for design and coding skills consistently elevate our projects.",
+      text: "Ich möchte meinen Kollegen im Frontend-Team für ihre herausragenden Beiträge anerkennen. Ihr Gespür für Design und Codierungsfähigkeiten steigert ständig unsere Projekte.",
       name: "A. Fischer - Team Partner"
     },
     {
-      text: "They have a fantastic ability to create user-friendly interfaces that impress both clients and users alike.",
+      text: "Sie haben eine fantastische Fähigkeit, benutzerfreundliche Oberflächen zu erstellen, die sowohl Kunden als auch Benutzer beeindrucken.",
       name: "B. Müller - Team Partner"
     },
     {
-      text: "Furthermore, they are always willing to lend a helping hand to teammates, fostering a great collaborative atmosphere.",
+      text: "Darüber hinaus sind sie immer bereit, den Teamkollegen zu helfen und schaffen so eine tolle kollaborative Atmosphäre.",
       name: "C. Schneider - Team Partner"
-    },
+    }
   ];
 
-  currentIndex = 0; 
-  isMoving = false; 
+  toggleComment(direction: string): void {
+    this.animationClass = '';
+    setTimeout(() => {
+      this.animationClass = direction === 'next' ? 'move-left' : 'move-right';
 
-  get displayedCards() {
-    const cardCount = this.cards.length;
-    const indices = [
-        (this.currentIndex - 2 + cardCount) % cardCount, // 2 vor
-        (this.currentIndex - 1 + cardCount) % cardCount, // 1 vor
-        this.currentIndex,                                 // Aktuelle Karte
-        (this.currentIndex + 1) % cardCount,             // 1 nach
-        (this.currentIndex + 2) % cardCount              // 2 nach
-    ];
-    
-    return indices.map(i => this.cards[i]);
-}
-
-  nextCard() {
-    if (!this.isMoving) {
-      this.isMoving = true; 
-      setTimeout(() => {
-        this.currentIndex = (this.currentIndex + 1) % this.cards.length; 
-        this.isMoving = false; 
-      }, 1000); 
-    }
+      if (direction === 'prev') {
+        this.currentCommentIndex =
+          this.currentCommentIndex > 0
+            ? this.currentCommentIndex - 1
+            : this.comments.length - 1;
+      } else {
+        this.currentCommentIndex =
+          this.currentCommentIndex < this.comments.length - 1
+            ? this.currentCommentIndex + 1
+            : 0;
+      }
+    }, 50);
   }
 
-  previousCard() {
-    if (!this.isMoving) {
-      this.isMoving = true; 
-      setTimeout(() => {
-        this.currentIndex = (this.currentIndex - 1 + this.cards.length) % this.cards.length; 
-        this.isMoving = false; 
-      }, 1000); 
-    }
+  getAnimationClass() {
+    return this.animationClass;
+  }
+
+  get currentComment() {
+    return this.comments[this.currentCommentIndex];
+  }
+
+  get lastComment() {
+    const lastIndex = this.currentCommentIndex === 0 ? this.comments.length - 1 : this.currentCommentIndex - 1;
+    return this.comments[lastIndex];
+  }
+
+  get nextComment() {
+    const nextIndex = this.currentCommentIndex === this.comments.length - 1 ? 0 : this.currentCommentIndex + 1;
+    return this.comments[nextIndex];
   }
 }

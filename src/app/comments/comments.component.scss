@@ -27,15 +27,40 @@ section {
     }
 }
 
+@keyframes moveLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveRight {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.move-left {
+    animation: moveLeft 0.4s ease forwards;
+}
+
+.move-right {
+    animation: moveRight 0.4s ease forwards;
+}
+
+// Anpassen der Styles für die Karten
 .card-section {
     width: 100%;
     height: 274px;
     display: flex;
-    gap: 44px;
     justify-content: center;
-    position: relative; // Wichtig für die relative Positionierung
-    
-
+    position: relative;
+    overflow: hidden; // Verhindert Überlauf
 }
 
 .card {
@@ -44,16 +69,8 @@ section {
     border-radius: 32px;
     border: 1px solid #3DCFB6;
     background-color: #3DCFB64D;
-    transition: height 0.3s ease, transform 0.3s ease;
-
-    &.active {
-        transform: scaleY(1.10);
-    }
-
-    &.moving {
-        transition: transform 0.5s ease;
-        transform: translateX(-107%); // Die Bewegung nach rechts
-    }
+    transition: 0.5s ease;
+    opacity: 1; // Karten sind zuerst sichtbar
 }
 
 .content {

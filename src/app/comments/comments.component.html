@@ -1,11 +1,8 @@
 <section>
     <div class="comments">
-        <h1>What my colleagues say about me</h1>
+        <h1>Was meine Kollegen über mich sagen</h1>
         <div class="card-section">
-            <div 
-                class="card" 
-                *ngFor="let card of displayedCards; let i = index"
-                [ngClass]="{'active': i === 2, 'moving': isMoving}">
+            <div class="card" [ngClass]="getAnimationClass()" *ngFor="let card of [lastComment, currentComment, nextComment]; let i = index">
                 <div class="content">
                     <p>{{ card.text }}</p>
                     <div class="name">
@@ -16,15 +13,14 @@
             </div>
         </div>
         <div class="navigation">
-            <button class="previous" (click)="previousCard()">
-                <img src="/assets/img/ico/arrow_b_w.svg">
+            <button class="previous" (click)="toggleComment('prev')">
+                <img src="/assets/img/ico/arrow_b_w.svg" alt="Vorherige">
             </button>
             <div class="dots">
-                <span *ngFor="let card of cards; let i = index" 
-                      [ngClass]="{'active': i === currentIndex}">•</span>
+                <span *ngFor="let comment of comments; let i = index" [ngClass]="{'active dots': i === currentCommentIndex}"></span>
             </div>
-            <button class="next" (click)="nextCard()">
-                <img src="/assets/img/ico/arrow_f_w.svg">
+            <button class="next" (click)="toggleComment('next')">
+                <img src="/assets/img/ico/arrow_f_w.svg" alt="Nächste">
             </button>
         </div>
     </div>
