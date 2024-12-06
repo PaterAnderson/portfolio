@@ -7,11 +7,12 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { SkillSetComponent } from './skill-set/skill-set.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { InfoCardComponent } from './projects/info-card/info-card.component';
+import { CommentsComponent } from './comments/comments.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, LandingPageComponent, NavbarComponent, AboutMeComponent, SkillSetComponent, ProjectsComponent, InfoCardComponent],
+  imports: [CommonModule, RouterOutlet, LandingPageComponent, NavbarComponent, AboutMeComponent, SkillSetComponent, ProjectsComponent, CommentsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
