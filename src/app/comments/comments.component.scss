@@ -31,6 +31,7 @@ section {
     0% {
         transform: translateX(100%);
     }
+
     100% {
         transform: translateX(0);
     }
@@ -40,6 +41,7 @@ section {
     0% {
         transform: translateX(-100%);
     }
+
     100% {
         transform: translateX(0);
     }
@@ -65,21 +67,22 @@ section {
 }
 
 .card {
-    width: 632px; 
-    height: 248px; 
+    width: 632px;
+    height: 248px;
     border-radius: 32px;
     border: 1px solid #3DCFB6;
     background-color: #3DCFB64D;
     transition: 0.5s ease;
-    opacity: 1; 
-    
+    opacity: 1;
+
 }
 
 .content {
-    gap: 44px;
     display: flex;
     flex-direction: column;
     padding: 48px 40px 48px 40px;
+    height: 160px;
+    justify-content: space-between;
 }
 
 .name {
@@ -147,6 +150,6 @@ section {
 }
 
 .scale-y {
-    transform: scaleY(1.1); /* oder den gewünschten Skalierungsfaktor */
+    transform: scaleY(1.1);
     transition: transform 0.3s ease;
 }
