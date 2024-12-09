@@ -27,8 +27,13 @@ export class CommentsComponent {
     }
   ];
 
+  ngOnInit() {
+    this.animationClass = 'scale-y';
+  }
+
   toggleComment(direction: string): void {
     this.animationClass = '';
+
     setTimeout(() => {
       this.animationClass = direction === 'next' ? 'move-left' : 'move-right';
 
@@ -43,11 +48,10 @@ export class CommentsComponent {
             ? this.currentCommentIndex + 1
             : 0;
       }
+      setTimeout(() => {
+        this.animationClass = 'scale-y';
+      }, 400);
     }, 50);
-  }
-
-  getAnimationClass() {
-    return this.animationClass;
   }
 
   get currentComment() {
