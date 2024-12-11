@@ -75,6 +75,9 @@ section {
     background-color: #3DCFB64D;
     transition: 0.5s ease;
     opacity: 1;
+    @media (max-width: 640px) {
+        width: 432px;
+    }
 
 }
 
@@ -148,6 +151,10 @@ section {
     top: 68px;
     left: 672px;
     z-index: 1;
+    @media (max-width: 640px) {
+        left: 471px;
+    }
+
 }
 
 .scale-y {

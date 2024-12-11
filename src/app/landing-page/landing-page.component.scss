@@ -22,12 +22,21 @@ section {
         font-family: 'Fira Code';
         font-size: 40px;
         font-weight: 400;
+        @media (max-width: 850px) {
+            font-size: 30px;
+        }
     }
 
     h1 {
         font-family: 'Karla';
         font-size: 128px;
         font-weight: 700;
+        @media (max-width: 1040px) {
+            font-size: 100px;
+        }
+        @media (max-width: 850px) {
+            font-size: 80px;
+        }
     }
 }
 
