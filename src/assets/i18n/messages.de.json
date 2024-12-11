@@ -1,6 +1,9 @@
 {
   "locale": "en-US",
   "translations": {
-    "104133559313698586": "Darius"
+    "headline": "Hallo Developer",
+    "firstname": "Darius",
+    "link": "/en-US",
+    "languageimg": "./../../../assets/img/header/de1.svg"
   }
 }

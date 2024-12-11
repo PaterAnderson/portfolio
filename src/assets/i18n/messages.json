@@ -1,6 +1,10 @@
 {
   "locale": "en-US",
   "translations": {
-    "104133559313698586": "Tom"
+    "headline": "Frontend Developer",
+    "link": "/de",
+    "languageimg": "./../../../assets/img/header/en1.svg",
+    "firstname": "Tom",
+    "angular": "Angular"
   }
 }
