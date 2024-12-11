@@ -14,6 +14,10 @@ section {
     img {
         width: 568px;
         height: 568px;
+        @media (max-width: 1145px) {
+            width: 468px;
+            height: 468px;
+        }
     }
 
     h2 {
@@ -32,6 +36,9 @@ section {
         text-decoration-skip-ink: none;
         color: #3DCFB6;
         margin-left: 24px;
+        @media (max-width: 1145px) {
+            font-size: 56px;
+        }
     }
 }
 
@@ -63,6 +70,12 @@ section {
     p {
         font-size: 18px;
     }
+    @media (max-width: 1145px) {
+        width: 468px;
+        p {
+            font-size: 16px;
+        }
+    }
 }
 
 .info {
@@ -76,6 +89,9 @@ section {
 
     p {
         margin-bottom: 24px;
+    }
+    @media (max-width: 1145px) {
+        width: 404px;
     }
 }
 

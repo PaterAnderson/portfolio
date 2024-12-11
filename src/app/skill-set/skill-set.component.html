@@ -1,43 +1,47 @@
 <section>
-    <div class="description">
-        <h2>Technologies</h2>
-        <div class="container">
-            <div class="center">
-                <h1>Skill Set</h1>
-                <p>My journey has involved working on diverse projects, employing a range of frontend technologies and
-                    concepts. With my extensive experience in web design, I am particularly well-equipped to tackle a
-                    diverse range of tasks. I am open to embracing new technologies and methodologies to Continously
-                    enhance my skills
-                    and stay ahead in the ever-evolving landscape of web development.
-                </p>
-                <h2>
-                    You need <span class="highlight">another Skill?</span>
-                </h2>
-                <p>Feel free to contact me. I look forward to expanding on my previous knowledge.
-                </p>
-                <div class="btn-align">
-                    <button class="custom-button"><span class="button-text">Let's Talk</span></button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="skills">
-        <div class="image-item" *ngFor="let image of images; let i = index">
-            <img [src]="image.src" alt="{{ image.word }}" (mouseenter)="showInfo(i)" (mouseleave)="hideInfo()" />
-            <p>{{ image.word }}</p>
-
-            <div class="info-window" *ngIf="isInfoVisible && i === images.length - 1">
-                <p>I have a special interest in learning</p>
-                <div class="info-images">
-                    <div class="info-align" *ngFor="let infoImage of interests">
-                        <img [src]="infoImage.src" alt="{{ infoImage.word }}" />
-                        <p>{{ infoImage.word }}</p>
+    <div class="align">
+        <div class="description">
+            <h2>Technologies</h2>
+            <div class="container">
+                <div class="center">
+                    <h1>Skill Set</h1>
+                    <p>My journey has involved working on diverse projects, employing a range of frontend technologies
+                        and
+                        concepts. With my extensive experience in web design, I am particularly well-equipped to tackle
+                        a
+                        diverse range of tasks. I am open to embracing new technologies and methodologies to Continously
+                        enhance my skills
+                        and stay ahead in the ever-evolving landscape of web development.
+                    </p>
+                    <h2>
+                        You need <span class="highlight">another Skill?</span>
+                    </h2>
+                    <p>Feel free to contact me. I look forward to expanding on my previous knowledge.
+                    </p>
+                    <div class="btn-align">
+                        <button class="custom-button"><span class="button-text">Let's Talk</span></button>
                     </div>
                 </div>
             </div>
         </div>
-        <div *ngIf="isInfoVisible">
-            <img class="bubble" src="/assets/img/ico/bubble.svg">
+        <div class="skills">
+            <div class="image-item" *ngFor="let image of images; let i = index">
+                <img [src]="image.src" alt="{{ image.word }}" (mouseenter)="showInfo(i)" (mouseleave)="hideInfo()" />
+                <p>{{ image.word }}</p>
+
+                <div class="info-window" *ngIf="isInfoVisible && i === images.length - 1">
+                    <p>I have a special interest in learning</p>
+                    <div class="info-images">
+                        <div class="info-align" *ngFor="let infoImage of interests">
+                            <img [src]="infoImage.src" alt="{{ infoImage.word }}" />
+                            <p>{{ infoImage.word }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="isInfoVisible">
+                <img class="bubble" src="/assets/img/ico/bubble.svg">
+            </div>
         </div>
     </div>
 </section>

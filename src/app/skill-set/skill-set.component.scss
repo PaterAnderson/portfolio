@@ -6,6 +6,23 @@ section {
     ;
     font-family: 'Karla';
     color: white;
+
+    @media (max-width: 1050px) {
+        height: 1238px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+.align {
+    @media (max-width: 1050px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        margin-top: 64px;
+    }
 }
 
 
@@ -17,6 +34,10 @@ section {
 
     h2 {
         color: #3DCFB6;
+    }
+
+    @media (max-width: 1050px) {
+        margin-left: 0;
     }
 }
 
@@ -136,10 +157,30 @@ section {
     left: 712px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* 4 Spalten */
     gap: 72px;
     animation: fade-in 1s forwards;
-    /* Fade-In Animation, optional */
+
+    @media (max-width: 1350px) {
+        width: 332px;
+    }
+
+    @media (max-width: 1215px) {
+        gap: 42px;
+    }
+
+    @media (max-width: 1145px) {
+        left: 650px;
+    }
+
+    @media (max-width: 1050px) {
+        position: relative;
+        width: 520px;
+        grid-template-columns: repeat(3, 1fr);
+        top: 0;
+        left: 0;
+    }
+
+
 }
 
 .image-item {
@@ -182,7 +223,25 @@ section {
     padding: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: #3DCFB6;
+
+    @media (max-width: 1350px) {
+        top: 213px;
+        left: 237px;
+    }
+
+    @media (max-width: 1215px) {
+        top: 178px;
+        left: 179px;
+    }
+
+    @media (max-width: 1145px) {}
+
+    @media (max-width: 1050px) {
+        top: 263px;
+        left: 169px;
+    }
 }
+
 
 .info-window img {
     width: 30px;
@@ -205,7 +264,8 @@ section {
     flex-direction: column;
     align-items: center;
     gap: 4px;
-    img{
+
+    img {
         width: 32px;
     }
 }
@@ -215,4 +275,21 @@ section {
     top: 338px;
     left: 391px;
     z-index: 999;
+
+    @media (max-width: 1350px) {
+        top: 340px;
+        left: 301px;
+    }
+
+    @media (max-width: 1215px) {
+        top: 305px;
+        left: 241px;
+    }
+
+    @media (max-width: 1145px) {}
+
+    @media (max-width: 1050px) {
+        top: 390px;
+        left: 247px;
+    }
 }
