@@ -34,6 +34,10 @@ nav {
         }
     
     }
+    @media (max-width: 725px) {
+        justify-content: space-around;
+        gap: 40vw;
+    }
 }
 
 .menu {
@@ -41,8 +45,22 @@ nav {
     display: flex;
     align-items: center;
     gap: 24px;
+    @media (max-width: 725px) {
+        display: none;
+        
+    }
 }
 
 .logo-name {
     margin-right: 100px;
+}
+
+.burger {
+    background-color: transparent;
+    border: none;
+    display: none;
+    @media (max-width: 725px) {
+        display: flex;
+        
+    }
 }
