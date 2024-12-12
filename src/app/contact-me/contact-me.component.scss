@@ -75,6 +75,9 @@ section {
     @media (max-width: 1080px) {
         width: 616px;
     }
+    @media (max-width: 640px) {
+        width: 80vw;
+    }
 }
 
 .form-container {
@@ -111,6 +114,9 @@ section {
             }
         }
     }
+    @media (max-width: 640px) {
+        width: 80vw;
+    }
 }
 
 .field {
@@ -131,6 +137,9 @@ section {
     width: 616px;
     height: 117px;
     gap: 16px;
+    @media (max-width: 640px) {
+        width: 80vw;
+    }
 }
 
 

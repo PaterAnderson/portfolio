@@ -64,6 +64,10 @@ section {
         text-decoration-skip-ink: none;
         color: #3DCFB6;
         margin-bottom: 32px;
+        @media (max-width: 550px) {
+            font-size: 56px;
+        }
+
 
     }
 
@@ -73,7 +77,13 @@ section {
         text-align: justified;
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
+        @media (max-width: 550px) {
+            font-size: 14px;
+        }
 
+    }
+    @media (max-width: 550px) {
+        width: 80vw;
     }
 }
 
@@ -100,6 +110,9 @@ section {
 
     p {
         margin-bottom: 32px;
+    }
+    @media (max-width: 550px) {
+        width: 70vw;
     }
 }
 
@@ -178,6 +191,9 @@ section {
         grid-template-columns: repeat(3, 1fr);
         top: 0;
         left: 0;
+    }
+    @media (max-width: 550px) {
+        width: 80vw;
     }
 
 
