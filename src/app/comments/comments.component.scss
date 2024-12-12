@@ -25,6 +25,9 @@ section {
         line-height: 41.98px;
         text-align: left;
         color: #3DCFB6;
+        @media (max-width: 640px) {
+            font-size: 5vw;
+        }
     }
 }
 

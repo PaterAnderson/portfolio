@@ -25,6 +25,9 @@ section {
         @media (max-width: 850px) {
             font-size: 30px;
         }
+        @media (max-width: 800px) {
+            font-size: 4vw;
+        }
     }
 
     h1 {
@@ -36,6 +39,9 @@ section {
         }
         @media (max-width: 850px) {
             font-size: 80px;
+        }
+        @media (max-width: 800px) {
+            font-size: 10vw;
         }
     }
 }
@@ -69,11 +75,20 @@ section {
             animation: moveInOut 5.5s linear infinite;
         }
     }
+    @media (max-width: 850px) {
+        width: 20vw;
+    }
+    @media (max-width: 570px) {
+        height: 10vw;
+     }
 }
 
 .button-text {
     position: relative;
     display: inline-block;
+    @media (max-width: 850px) {
+       font-size: 2vw;
+    }
 }
 
 @keyframes moveInOut {
@@ -198,7 +213,7 @@ section {
 }
 
 .message-container {
-    width: 99.99%;
+    width: 99.9%;
     position: absolute;
     top: 737.77px;
     overflow: hidden;

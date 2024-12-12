@@ -1,7 +1,7 @@
 <nav>
     <div class="menu">
         <a i18n-href="@@link" href="/de">
-        <img i18n-src="@@languageimg" src="/assets/img/header/en1.svg">
+            <img i18n-src="@@languageimg" src="/assets/img/header/en1.svg">
         </a>
         <a href="">About me</a>
         <a href="">Skills</a>
@@ -11,7 +11,19 @@
         <p i18n="@@firstname">Tom</p>
         <p>Wahrenberg</p>
     </div>
-    <button class="burger">
+    <button class="burger" (click)="toggleMenu()">
         <img src="/assets/img/ico/menu.svg">
     </button>
+    <div class="burger-menu" [class.show]="isMenuOpen">
+        <div class="burger-align">
+            <a href="">About me</a>
+            <a href="">Skills</a>
+            <a href="">Projects</a>
+            <a i18n-href="@@link" href="/de">
+                <img i18n-src="@@languageimg" src="/assets/img/header/en1.svg">
+            </a>
+        </div>
+    </div>
+
+
 </nav>

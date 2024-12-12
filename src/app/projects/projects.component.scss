@@ -57,6 +57,9 @@ section {
         width: 456px;
         margin-top: 8px;
         margin-bottom: 41px;
+        @media (max-width: 550px) {
+            width: auto;
+        }
     }
 }
 
@@ -112,6 +115,9 @@ section {
             color: #3DCFB6;
             width: 6px;
             height: 22px;
+        }
+        @media (max-width: 490px) {
+            font-size: 14px;
         }
     }
 }

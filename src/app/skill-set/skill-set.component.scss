@@ -250,11 +250,17 @@ section {
         left: 179px;
     }
 
-    @media (max-width: 1145px) {}
-
     @media (max-width: 1050px) {
         top: 263px;
         left: 169px;
+    }
+    @media (max-width: 550px) {
+        top: 263px;
+        left: 23vw;
+    }
+    @media (max-width: 535px) {
+        top: 282px;
+        left: 23vw;
     }
 }
 
@@ -307,5 +313,12 @@ section {
     @media (max-width: 1050px) {
         top: 390px;
         left: 247px;
+    }
+    @media (max-width: 550px) {
+        left: 37.6vw;
+    }
+    @media (max-width: 535px) {
+        top: 409px;
+        left: 37.5vw;
     }
 }

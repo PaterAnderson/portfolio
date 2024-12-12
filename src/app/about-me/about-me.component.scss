@@ -24,6 +24,17 @@ section {
             width: 468px;
             height: 468px;
         }
+
+        @media (max-width: 500px) {
+            width: 358px;
+            height: 358px;
+        }
+
+        @media (max-width: 380px) {
+            width: 300px;
+            height: 300px;
+        }
+        
     }
 
     h2 {
@@ -86,7 +97,16 @@ section {
         width: 468px;
         p {
             font-size: 16px;
+            @media (max-width: 380px) {
+                font-size: 14px;
+            }
         }
+    }
+    @media (max-width: 500px) {
+        width: 358px;
+    }
+    @media (max-width: 380px) {
+        width: 300px;
     }
 }
 
@@ -104,6 +124,12 @@ section {
     }
     @media (max-width: 1145px) {
         width: 404px;
+    }
+    @media (max-width: 500px) {
+        width: 295px;
+    }
+    @media (max-width: 380px) {
+        width: 255px;
     }
 }
 
