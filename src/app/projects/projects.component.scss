@@ -9,7 +9,7 @@ section {
         height: 681px;
     }
         @media (max-width: 700px) {
-            height: 691px;
+            height: 738px;
     }
 }
 
@@ -50,6 +50,9 @@ section {
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
         color: #3DCFB6;
+        @media (max-width: 360px) {
+            font-size: 48px;
+        }
     }
 
     p {
@@ -119,6 +122,10 @@ section {
         @media (max-width: 490px) {
             font-size: 14px;
         }
+        @media (max-width: 410px) {
+            font-size: 10px;
+        }
+
     }
 }
 
