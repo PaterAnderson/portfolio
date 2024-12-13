@@ -22,6 +22,10 @@ section {
         width: 80vw;
         margin-left: 0;
     }
+    @media (min-width: 1921px) {
+        margin-left: 12vw;
+    }
+    
 }
 
 .description {
@@ -132,6 +136,9 @@ section {
 .project-image {
     position: absolute;
     left: 1100px;
+    @media (min-width: 1921px) {
+        left: 58vw;
+    }
 
     img {
         border-radius: 16px;
@@ -139,7 +146,11 @@ section {
 
     img:nth-child(1) { 
         position: relative; 
-        z-index: 2; 
+        z-index: 2;
+        @media (min-width: 1921px) {
+            width: 20vw;
+        }
+         
     }
 
     img:nth-child(2) { 
@@ -147,6 +158,9 @@ section {
         left: 24px;
         top: 20px;
         z-index: 1; 
+        @media (min-width: 1921px) {
+            width: 20vw;
+        }
     }
 }
 

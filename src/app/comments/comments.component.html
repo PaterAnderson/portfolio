@@ -1,35 +1,38 @@
+<div class="background">
 <section>
-    <div class="comments">
-        <h1>What my colleagues say about me</h1>
-        <div class="card-section">
-            <div class="card" [ngClass]="{
+        <div class="comments">
+            <h1>What my colleagues say about me</h1>
+            <div class="card-section">
+                <div class="card" [ngClass]="{
          'scale-y': i === 1 && animationClass === 'scale-y', 
          'move-left': animationClass === 'move-left', 
          'move-right': animationClass === 'move-right'
             }" *ngFor="let card of [lastComment, currentComment, nextComment]; let i = index">
-                <div class="content">
-                    <p>{{ card.text }}</p>
-                    <div class="name">
-                        <hr>
-                        <p>{{ card.name }} - {{ card.status }}</p>
+                    <div class="content">
+                        <p>{{ card.text }}</p>
+                        <div class="name">
+                            <hr>
+                            <p>{{ card.name }} - {{ card.status }}</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <img class="quote" src="/assets/img/deco/quotes.svg">
-        <div class="navigation">
-            <button class="previous" (click)="toggleComment('prev')">
-                <img src="/assets/img/ico/arrow_b_w.svg" alt="Vorherige">
-            </button>
-            <div class="dots">
-                <span *ngFor="let comment of comments; let i = index"
-                    [ngClass]="{'active': comment === currentComment}">
-                    •
-                </span>
+            <img class="quote" src="/assets/img/deco/quotes.svg">
+            <div class="gradient"></div>
+            <div class="navigation">
+                <button class="previous" (click)="toggleComment('prev')">
+                    <img src="/assets/img/ico/arrow_b_w.svg" alt="Vorherige">
+                </button>
+                <div class="dots">
+                    <span *ngFor="let comment of comments; let i = index"
+                        [ngClass]="{'active': comment === currentComment}">
+                        •
+                    </span>
+                </div>
+                <button class="next" (click)="toggleComment('next')">
+                    <img src="/assets/img/ico/arrow_f_w.svg" alt="Nächste">
+                </button>
             </div>
-            <button class="next" (click)="toggleComment('next')">
-                <img src="/assets/img/ico/arrow_f_w.svg" alt="Nächste">
-            </button>
         </div>
-    </div>
 </section>
+</div>

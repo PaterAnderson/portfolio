@@ -39,6 +39,11 @@ section {
     @media (max-width: 1050px) {
         margin-left: 0;
     }
+
+    @media (min-width: 1921px) {
+        margin-left: 12vw;
+    }
+    
 }
 
 .container {
@@ -182,11 +187,15 @@ section {
     height: 428px;
     position: absolute;
     top: 1898px;
-    left: 712px;
+    left: 812px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 72px;
     animation: fade-in 1s forwards;
+
+    @media (max-width: 1460px) {
+        left: 712px;
+    }
 
     @media (max-width: 1350px) {
         width: 332px;
@@ -212,6 +221,11 @@ section {
     }
     @media (max-width: 360px) {
         gap: 25px;
+    }
+
+
+    @media (min-width: 1921px) {
+        left: 43vw;
     }
 
 
