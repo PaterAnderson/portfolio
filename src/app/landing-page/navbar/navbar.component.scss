@@ -56,6 +56,12 @@ nav {
 
 .logo-name {
     margin-right: 100px;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    img {
+        width: 48px;
+    }
 }
 
 .burger {

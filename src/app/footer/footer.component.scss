@@ -12,7 +12,7 @@ section {
         font-size: 18px;
         font-weight: 400;
         line-height: 21.6px;
-        color: #3DCFB6; 
+        color: #3DCFB6;
 
     }
 }
@@ -24,11 +24,13 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     h2 {
         @media (max-width: 840px) {
             display: none;
         }
     }
+
     @media (max-width: 840px) {
         justify-content: space-around;
         margin-left: 0;
@@ -67,16 +69,20 @@ section {
         line-height: 19.2px;
         text-decoration: none;
         color: white;
-        position: relative; 
+        position: relative;
 
         &:hover {
             color: #6ad7bf;
+
             &::after {
                 content: '•';
                 position: absolute;
-                left: -0.5em; /* Verschiebe den Punkt nach links */
-                top: 50%;     /* Vertikale Position auf die Mitte setzen */
-                transform: translateY(-50%); /* Vertikale Ausrichtung auf die Mitte */
+                left: -0.5em;
+                /* Verschiebe den Punkt nach links */
+                top: 50%;
+                /* Vertikale Position auf die Mitte setzen */
+                transform: translateY(-50%);
+                /* Vertikale Ausrichtung auf die Mitte */
                 color: #6ad7bf;
                 font-size: 1.5em;
             }
@@ -84,12 +90,41 @@ section {
     }
 }
 
+.logo-name {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 8px;
+
+    img {
+        width: 64px;
+
+        &:hover {
+            opacity: 0;
+            cursor: pointer;
+        }
+
+
+    }
+
+    img:nth-child(2) {
+        position: absolute;
+    }
+
+    span {
+        font-family: 'Fira Code';
+        font-weight: 700;
+    }
+}
+
 .smartphone {
-    
+
     display: flex;
     justify-content: center;
+
     h2 {
         visibility: hidden;
+
         @media (max-width: 840px) {
             visibility: visible;
         }
