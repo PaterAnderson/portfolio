@@ -1,6 +1,8 @@
 
 section {
     width: 100%;
+    max-width: 2560px;
+    margin: 0 auto;
     height: 996px;
     background: #1C1C1C;
     font-family: 'Karla';
@@ -58,6 +60,9 @@ section {
     }
 }
 
+.background {
+    background: #1C1C1C;
+}
 
 .align {
     display: flex;

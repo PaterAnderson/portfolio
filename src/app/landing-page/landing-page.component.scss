@@ -260,7 +260,8 @@ section {
     font-family: "Karla";
     font-size: 18px;
     height: 30px;
-    background-color: #383838;
+    background: #FFFFFF1F;
+    backdrop-filter: blur(5.300000190734863px);
     white-space: nowrap;
     display: flex;
 }
