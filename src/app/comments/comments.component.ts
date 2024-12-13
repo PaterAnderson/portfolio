@@ -15,15 +15,18 @@ export class CommentsComponent {
   comments = [
     {
       text: "Ich möchte meinen Kollegen im Frontend-Team für ihre herausragenden Beiträge anerkennen. Ihr Gespür für Design und Codierungsfähigkeiten steigert ständig unsere Projekte.",
-      name: "A. Fischer - Team Partner"
+      name: "A. Fischer",
+      status: "Team Partner"
     },
     {
       text: "Sie haben eine fantastische Fähigkeit, benutzerfreundliche Oberflächen zu erstellen, die sowohl Kunden als auch Benutzer beeindrucken.",
-      name: "B. Müller - Team Partner"
+      name: "B. Müller",
+      status: "Team Partner"
     },
     {
       text: "Darüber hinaus sind sie immer bereit, den Teamkollegen zu helfen und schaffen so eine tolle kollaborative Atmosphäre.",
-      name: "C. Schneider - Team Partner"
+      name: "C. Schneider",
+      status: "Team Partner"
     }
   ];
 

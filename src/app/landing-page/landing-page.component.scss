@@ -22,9 +22,11 @@ section {
         font-family: 'Fira Code';
         font-size: 40px;
         font-weight: 400;
+
         @media (max-width: 850px) {
             font-size: 30px;
         }
+
         @media (max-width: 800px) {
             font-size: 4vw;
         }
@@ -34,14 +36,13 @@ section {
         font-family: 'Karla';
         font-size: 128px;
         font-weight: 700;
+
         @media (max-width: 1040px) {
             font-size: 100px;
         }
+
         @media (max-width: 850px) {
-            font-size: 80px;
-        }
-        @media (max-width: 800px) {
-            font-size: 10vw;
+            font-size: 12vw;
         }
     }
 }
@@ -75,19 +76,34 @@ section {
             animation: moveInOut 5.5s linear infinite;
         }
     }
+
     @media (max-width: 850px) {
         width: 20vw;
     }
-    @media (max-width: 570px) {
-        height: 10vw;
-     }
+
+    @media (max-width: 801px) {
+        width: 161px;
+    }
+
+    @media (max-width: 500px) {
+        width: 126px;
+        height: 38px;
+    }
+
 }
 
 .button-text {
     position: relative;
     display: inline-block;
+
     @media (max-width: 850px) {
-       font-size: 2vw;
+        font-size: 2vw;
+    }
+    @media (max-width: 801px) {
+        font-size: 16px;
+    }
+    @media (max-width: 500px) {
+        font-size: 11px;
     }
 }
 
@@ -118,6 +134,9 @@ section {
     width: 100%;
     margin-top: 588px;
     position: absolute;
+    @media (max-width: 500px) {
+        width: 85%;
+    }
 }
 
 .box {
@@ -155,6 +174,9 @@ section {
     flex-direction: column;
     align-items: center;
     gap: 24px;
+    @media (max-width: 500px) {
+        margin-right: 0;
+    }
 }
 
 .left {
@@ -162,6 +184,9 @@ section {
     flex-direction: column;
     align-items: center;
     margin-left: 96px;
+    @media (max-width: 500px) {
+        margin-left: 0;
+    }
 }
 
 .mail {
@@ -182,16 +207,23 @@ section {
             filter: brightness(0) saturate(100%) invert(1);
         }
     }
-    a:nth-child(3) { 
+
+    a:nth-child(3) {
         display: none;
+
         @media (max-width: 1235px) {
             display: block;
         }
     }
+
     @media (max-width: 1235px) {
         bottom: 346px;
         right: -64px;
-        
+
+    }
+    @media (max-width: 500px) {
+        bottom: 346px;
+        right: -159px;
     }
 }
 
@@ -206,6 +238,7 @@ section {
         &:hover {
             color: #3DCFB6;
         }
+
         @media (max-width: 1235px) {
             visibility: hidden;
         }
@@ -221,7 +254,7 @@ section {
 }
 
 .message-bar {
-    width: calc(200%); 
+    width: calc(200%);
     padding: 12px 32px;
     color: white;
     font-family: "Karla";
@@ -237,7 +270,7 @@ section {
     font-size: 26px;
     white-space: nowrap;
     max-width: none;
-    
+
     p {
         display: inline-block;
         margin-left: 0;
@@ -260,6 +293,7 @@ section {
     0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(-100%);
     }

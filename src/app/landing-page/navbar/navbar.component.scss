@@ -70,6 +70,7 @@ nav {
 
 .burger-menu {
     position: absolute;
+    visibility: hidden;
     right: 13vw;
     top: 15px;
     width: 238px;
@@ -82,6 +83,10 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (max-width: 725px) {
+        visibility: visible;
+
+    }
     @media (max-width: 470px) {
         left: 36vw;
 
