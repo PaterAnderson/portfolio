@@ -25,6 +25,11 @@ section {
         gap: 40px;
         margin-top: 64px;
     }
+    @media (min-width: 2561px) {
+        display: flex;
+        align-items: center;  
+        gap: 150px;
+    }
 }
 
 
@@ -44,6 +49,9 @@ section {
 
     @media (min-width: 1921px) {
         margin-left: 12vw;
+    }
+    @media (min-width: 2561px) {
+        margin-left: 300px;
     }
     
 }
@@ -218,6 +226,11 @@ section {
 
     @media (min-width: 1921px) {
         left: 43vw;
+    }
+    @media (min-width: 2561px) {
+        position: relative;
+        top: -30px;
+        left: 0;
     }
 
 
