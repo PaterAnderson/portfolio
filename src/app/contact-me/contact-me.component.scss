@@ -251,13 +251,3 @@ section {
     position: relative;
     display: inline-block;
 }
-
-@keyframes moveInOut {
-    0% {
-        transform: translateX(150%);
-    }
-
-    100% {
-        transform: translateX(-150%);
-    }
-}

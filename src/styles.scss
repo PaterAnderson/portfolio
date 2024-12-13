@@ -56,3 +56,21 @@
   font-weight: 700;
   src: url('./assets/fonts/karla-v31-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
+@keyframes moveInOut {
+  0% {
+      transform: translateX(0%);
+  }
+
+  50% {
+      transform: translateX(-150%);
+  }
+
+  50.001% {
+      transform: translateX(150%);
+  }
+
+  100% {
+      transform: translateX(0%);
+  }
+}

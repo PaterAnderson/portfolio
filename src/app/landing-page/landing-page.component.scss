@@ -107,16 +107,6 @@ section {
     }
 }
 
-@keyframes moveInOut {
-    0% {
-        transform: translateX(150%);
-    }
-
-    100% {
-        transform: translateX(-150%);
-    }
-}
-
 @keyframes bounce {
     100% {
         transform: translateY(0px);

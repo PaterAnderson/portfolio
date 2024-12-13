@@ -146,7 +146,7 @@ section {
 
 .custom-button {
     background-color: transparent;
-    width: 172px;
+    width: 130px;
     height: 48px;
     border: 1px solid #ffffff;
     border-radius: 100px;
@@ -164,7 +164,7 @@ section {
         border: 1px solid #3DCFB6;
 
         .button-text {
-            animation: moveInOut 5.5s linear infinite;
+            animation: moveInOut 4.5s linear infinite;
         }
     }
 }
@@ -172,16 +172,6 @@ section {
 .button-text {
     position: relative;
     display: inline-block;
-}
-
-@keyframes moveInOut {
-    0% {
-        transform: translateX(150%);
-    }
-
-    100% {
-        transform: translateX(-150%);
-    }
 }
 
 .skills {
