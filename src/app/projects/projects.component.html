@@ -1,41 +1,43 @@
-<section>
-    <div class="description-box">
-        <div class="description">
-            <h2>Portfolio</h2>
-            <h1>Featured Projects</h1>
-            <p>Explore a selection of my work here - Interact with projects to see my skills in action.</p>
-        </div>
+<div class="background">
+    <section>
+        <div class="description-box">
+            <div class="description">
+                <h2>Portfolio</h2>
+                <h1>Featured Projects</h1>
+                <p>Explore a selection of my work here - Interact with projects to see my skills in action.</p>
+            </div>
 
-        <div>
-            <div class="seperator"></div>
-            <div class="template" *ngFor="let project of projects, let i = index">
-                <div class="project" (mouseenter)="showImage = project.imageUrl" (mouseleave)="showImage = project.imageUrl"
-                    (click)="openInfoCard(project, i)">
-                    <div class="content">
-                        <div class="title-with-image">
-                            <h3>{{ project.title }}</h3>
-                            <div class="static-image" *ngIf="showImage === project.imageUrl">
-                                <img src="assets/img/ico/arrow_out.svg" alt="Static Image" />
+            <div>
+                <div class="seperator"></div>
+                <div class="template" *ngFor="let project of projects, let i = index">
+                    <div class="project" (mouseenter)="showImage = project.imageUrl"
+                        (mouseleave)="showImage = project.imageUrl" (click)="openInfoCard(project, i)">
+                        <div class="content">
+                            <div class="title-with-image">
+                                <h3>{{ project.title }}</h3>
+                                <div class="static-image" *ngIf="showImage === project.imageUrl">
+                                    <img src="assets/img/ico/arrow_out.svg" alt="Static Image" />
+                                </div>
+                            </div>
+                            <p class="technologies">
+                                <span *ngFor="let tech of project.technologies">{{ tech }}</span>
+                            </p>
+                            <div class="project-image" *ngIf="showImage === project.imageUrl">
+                                <img [src]="project.previewImageUrl" alt="{{ project.title }} Image" />
+                                <img src="/assets/img/deco/lines.svg">
                             </div>
                         </div>
-                        <p class="technologies">
-                            <span *ngFor="let tech of project.technologies">{{ tech }}</span>
-                        </p>
-                        <div class="project-image" *ngIf="showImage === project.imageUrl">
-                            <img [src]="project.previewImageUrl" alt="{{ project.title }} Image" />
-                            <img src="/assets/img/deco/lines.svg">
-                        </div>
                     </div>
+                    <div class="seperator"></div>
                 </div>
-                <div class="seperator"></div>
-            </div>
 
-            <div class="overlay" *ngIf="showOverlay">
-                <app-info-card *ngIf="showOverlay && selectedProject" [project]="selectedProject"
-                    [selectedProjectIndex]="selectedProjectIndex" [projects]="projects" (close)="closeInfoCard()"
-                    (next)="updateSelectedProject($event)">
-                </app-info-card>
+                <div class="overlay" *ngIf="showOverlay">
+                    <app-info-card *ngIf="showOverlay && selectedProject" [project]="selectedProject"
+                        [selectedProjectIndex]="selectedProjectIndex" [projects]="projects" (close)="closeInfoCard()"
+                        (next)="updateSelectedProject($event)">
+                    </app-info-card>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+</div>

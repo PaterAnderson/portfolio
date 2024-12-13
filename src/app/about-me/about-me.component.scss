@@ -60,10 +60,6 @@ section {
     }
 }
 
-.background {
-    background: #1C1C1C;
-}
-
 .align {
     display: flex;
     justify-content: space-around;
@@ -71,6 +67,11 @@ section {
         justify-content: normal;
         margin-left: 18vw;
         gap: 20vw;
+    }
+    @media (min-width: 2561px) {
+        justify-content: space-around;
+        margin-left: 0;
+        gap: 0;
     }
     @media (max-width: 950px) {
         display: flex;

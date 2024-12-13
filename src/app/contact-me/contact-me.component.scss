@@ -1,5 +1,7 @@
 section {
     width: 100%;
+    max-width: 2560px;
+    margin: 0 auto;
     height: 802px;
     background-color: #1C1C1C;
     display: flex;
@@ -29,6 +31,10 @@ section {
     @media (min-width: 1921px) {
         margin-left: 25vw;
     }
+    @media (min-width: 2561px) {
+        margin-left: 300px;
+    }
+    
 }
 
 .contact-me {

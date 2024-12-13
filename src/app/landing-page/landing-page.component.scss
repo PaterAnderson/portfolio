@@ -132,6 +132,8 @@ section {
     justify-content: space-between;
     align-items: flex-end;
     width: 100%;
+    max-width: 2560px;
+    margin: 0 auto;
     margin-top: 588px;
     position: absolute;
     @media (max-width: 500px) {
@@ -247,6 +249,8 @@ section {
 
 .message-container {
     width: 99.9%;
+    max-width: 2560px;
+    margin: 0 auto;
     position: absolute;
     top: 737.77px;
     overflow: hidden;

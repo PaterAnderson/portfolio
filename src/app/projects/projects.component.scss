@@ -1,5 +1,7 @@
 section {
     width: 100%;
+    max-width: 2560px;
+    margin: 0 auto;
     height: 581px;
     background: #1C1C1C;
     font-family: 'Karla';
@@ -25,7 +27,9 @@ section {
     @media (min-width: 1921px) {
         margin-left: 12vw;
     }
-    
+    @media (min-width: 2561px) {
+        margin-left: 300px;
+    }
 }
 
 .description {
@@ -150,6 +154,9 @@ section {
         @media (min-width: 1921px) {
             width: 20vw;
         }
+        @media (min-width: 2561px) {
+            width: 440px;
+        }
          
     }
 
@@ -160,6 +167,9 @@ section {
         z-index: 1; 
         @media (min-width: 1921px) {
             width: 20vw;
+        }
+        @media (min-width: 2561px) {
+            width: 440px;
         }
     }
 }
