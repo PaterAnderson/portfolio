@@ -24,7 +24,8 @@ export class ProjectsComponent {
         { name: 'Firebase', icon: '/assets/img/deco/firebase.svg' },
         { name: 'Angular', icon: '/assets/img/deco/angular.svg' },
         { name: 'TypeScript', icon: '/assets/img/deco/ts.svg' },
-      ]
+      ],
+      link: 'https://www.portfoliotw.com/join'
     },
     {
       title: 'Sharkie',
@@ -36,7 +37,8 @@ export class ProjectsComponent {
         { name: 'HTML', icon: '/assets/img/deco/html.svg' },
         { name: 'CSS', icon: '/assets/img/deco/css.svg' },
         { name: 'JavaScript', icon: '/assets/img/deco/js.svg' }
-      ]
+      ],
+      link: 'https://www.portfoliotw.com/sharkie'
     },
     {
       title: 'Pokédex',
@@ -48,7 +50,8 @@ export class ProjectsComponent {
         { name: 'HTML', icon: '/assets/img/deco/html.svg' },
         { name: 'CSS', icon: '/assets/img/deco/css.svg' },
         { name: 'JavaScript', icon: '/assets/img/deco/js.svg' }
-      ]
+      ],
+      link: 'https://www.portfoliotw.com/pokedex'
     }
   ];
 

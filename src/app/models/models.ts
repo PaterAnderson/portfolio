@@ -6,4 +6,5 @@ export interface Project {
     imageUrl: string;
     previewImageUrl: string;
     technologiesWithIcons: { name: string; icon: string }[];
+    link: string;
 }
