@@ -213,6 +213,9 @@ section {
     display: flex;
     align-items: center;
     gap: 8px;
+    a {
+        text-decoration: none;
+    }
 }
 
 
