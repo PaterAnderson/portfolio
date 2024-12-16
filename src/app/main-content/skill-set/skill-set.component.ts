@@ -28,7 +28,7 @@ export class SkillSetComponent {
     { src: '/assets/img/ico/interests/vue.svg', word: 'Vue Js' }, 
   ];
   
-  isInfoVisible = true;
+  isInfoVisible = false;
   currentHoverIndex: number | null = null;
 
   showInfo(index: number) {

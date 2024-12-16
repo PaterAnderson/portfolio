@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { Project } from '../../models/models';
+import { Project } from '../../../models/models';
 
 @Component({
   selector: 'app-info-card',

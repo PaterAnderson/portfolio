@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { InfoCardComponent } from "./info-card/info-card.component";
-import { Project } from '../models/models';
+import { Project } from '../../models/models';
 
 @Component({
   selector: 'app-projects',

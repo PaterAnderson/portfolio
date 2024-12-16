@@ -4,8 +4,13 @@
 
 }
 
-nav {
+section {
+    position: fixed;
     width: 100%;
+}
+
+nav {
+    
     max-width: 2560px;
     margin: 0 auto;
     height: 98px;
@@ -13,7 +18,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     color: white;
-    position: fixed;
+
     background: linear-gradient(0deg, rgba(0, 0, 0, 0) 13.56%, rgba(0, 0, 0, 0.6) 84.01%);
 
 
