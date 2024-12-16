@@ -9,11 +9,6 @@
   background: #1C1C1C;
 }
 
-// body {
-//   max-width: 1920px;
-//   margin: 0 auto;
-// }
-
 .fontFira{
     font-family: 'Fira Code';
 }
@@ -74,4 +69,9 @@
   100% {
       transform: translateX(0%);
   }
+}
+
+html {
+  scrollbar-width: thin; /* Optionen: auto, thin */
+  scrollbar-color: #3DCFB6 #1C1C1C; /* Farbschema: scrollbar-thumb scrollbar-track */
 }
