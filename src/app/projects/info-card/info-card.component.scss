@@ -9,6 +9,17 @@ section {
     color: white;
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 1270px) {
+        width: 366px;
+        height: 844px;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+
+    @media (max-width: 366px) {
+        width: 300px;
+    }
 }
 
 .information {
@@ -17,7 +28,30 @@ section {
     margin-top: 91px;
     margin-left: 80px;
     gap: 40px;
-    display: grid;
+    display: flex;
+    flex-direction: column;
+
+    button {
+        visibility: hidden;
+
+        @media (max-width: 1270px) {
+            visibility: visible;
+        }
+
+    }
+
+
+    @media (max-width: 1270px) {
+        margin-left: 12px;
+        margin-top: 0;
+        gap: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media (max-width: 366px) {
+        gap: 20px;
+    }
 }
 
 .headline {
@@ -51,13 +85,30 @@ section {
         text-decoration-skip-ink: none;
 
     }
+
+    @media (max-width: 1270px) {
+        display: block;
+        width: 280px;
+
+        h1 {
+            font-size: 72px;
+        }
+
+        h2 {
+            font-size: 56px;
+        }
+    }
+
+    @media (max-width: 366px) {
+        height: auto;
+    }
 }
 
 .about {
     display: grid;
     width: 480px;
     height: 171px;
-    gap: 20px;
+    gap: 40px;
 
     h3 {
         font-family: 'Fira Code';
@@ -79,11 +130,34 @@ section {
         text-decoration-skip-ink: none;
 
     }
+
+    @media (max-width: 1270px) {
+        width: 342px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        h3 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+    @media (max-width: 366px) {
+        width: 276px;
+    }
 }
 
 .languages {
     display: flex;
     gap: 16px;
+
+    @media (max-width: 1270px) {
+        flex-wrap: wrap;
+    }
 }
 
 .language {
@@ -114,6 +188,15 @@ section {
     height: 48px;
     gap: 32px;
 
+    @media (max-width: 1270px) {
+        margin-left: 18px;
+    }
+
+    @media (max-width: 366px) {
+        width: 276px;
+        margin-left: 0;
+    }
+
 }
 
 .custom-button {
@@ -135,6 +218,7 @@ section {
     gap: 4px;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 
     img {
         transition: all 0.3s ease;
@@ -146,6 +230,12 @@ section {
 
         img {
             transform: translate(5px, -5px);
+        }
+    }
+
+    @media (max-width: 366px) {
+        span {
+            font-size: 14px;
         }
     }
 }
@@ -162,6 +252,29 @@ section {
         transition: all 0.3s ease;
     }
 
+    @media (max-width: 1270px) {
+        margin-right: 12px;
+        margin-bottom: 28px;
+        margin-top: 24px;
+
+        button:nth-child(3) {
+            display: none;
+        }
+
+        img:nth-child(2) {
+            width: 342px;
+            height: 216px;
+
+            @media (max-width: 366px) {
+                width: 276px;
+            }
+        }
+    }
+
+    @media (max-width: 366px) {
+        margin-bottom: 0;
+    }
+
 }
 
 .close {
@@ -172,6 +285,7 @@ section {
 
     &:hover {
         cursor: pointer;
+
         img {
             transform: scale(1.8);
             filter: invert(54%) sepia(25%) saturate(2154%) hue-rotate(130deg);
@@ -211,5 +325,15 @@ section {
 
             color: white;
         }
+    }
+
+    @media (max-width: 1270px) {
+        margin-left: 200px;
+        margin-top: 15px;
+    }
+
+    @media (max-width: 366px) {
+        margin-top: 0;
+        margin-left: 140px;
     }
 }

@@ -172,6 +172,9 @@ section {
             width: 440px;
         }
     }
+    @media (max-width: 1270px) {
+        display: none;
+    }
 }
 
 .title-with-image {

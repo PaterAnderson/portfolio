@@ -11,7 +11,7 @@
                 <div class="seperator"></div>
                 <div class="template" *ngFor="let project of projects, let i = index">
                     <div class="project" (mouseenter)="showImage = project.imageUrl"
-                        (mouseleave)="showImage = project.imageUrl" (click)="openInfoCard(project, i)">
+                        (mouseleave)="showImage = '' " (click)="openInfoCard(project, i)">
                         <div class="content">
                             <div class="title-with-image">
                                 <h3>{{ project.title }}</h3>

@@ -13,16 +13,20 @@
                     <span>{{ tech.name }}</span>
                 </div>
             </div>
-        </div>
-        <div class="btn">
-            <a class="custom-button">
-                <span class="button-text">GitHub</span>
-                <img src="/assets/img/ico/arrow_out_g.svg" alt="Arrow Icon" class="button-icon">
-            </a>
-            <a href="{{ project.link }}" class="custom-button">
-                <span class="button-text">Live Test</span>
-                <img src="/assets/img/ico/arrow_out_g.svg" alt="Arrow Icon" class="button-icon">
-            </a>
+            <div class="btn">
+                <a class="custom-button">
+                    <span class="button-text">GitHub</span>
+                    <img src="/assets/img/ico/arrow_out_g.svg" alt="Arrow Icon" class="button-icon">
+                </a>
+                <a href="{{ project.link }}" class="custom-button">
+                    <span class="button-text">Live Test</span>
+                    <img src="/assets/img/ico/arrow_out_g.svg" alt="Arrow Icon" class="button-icon">
+                </a>
+            </div>
+            <button class="next" (click)="goToNextProject()">
+                <span class="button-text">Next Project</span>
+                <img src="/assets/img/ico/arrow_f.svg" alt="Arrow Icon" class="button-icon">
+            </button>
         </div>
     </div>
     <div class="right-side">
