@@ -2,9 +2,12 @@
   "locale": "en-US",
   "translations": {
     "headline": "Frontend Developer",
+    "angular": "Angular",
     "link": "/de",
-    "languageimg": "./../../../assets/img/header/en1.svg",
-    "firstname": "Tom",
-    "angular": "Angular"
+    "languageimg": "/assets/img/header/en1.svg",
+    "me": "About me",
+    "skills": "Skills",
+    "projects": "Projects",
+    "firstname": "Tom {$LINE_BREAK} Wahrenberg"
   }
 }
