@@ -57,6 +57,12 @@ nav {
         display: none;
 
     }
+
+    a {
+        :hover {
+            filter: brightness(2.1);
+        }
+    }
 }
 
 .logo-name {
