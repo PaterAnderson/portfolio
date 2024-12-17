@@ -296,3 +296,16 @@ section {
         transform: translateX(-100%);
     }
 }
+
+@media (max-width: 1000px) {
+    section {
+        height: 800px;
+
+    }
+    .links {
+        margin-top: 488px;
+    }
+    .message-container {
+        top: 695.77px;
+    }
+}
