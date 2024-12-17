@@ -15,34 +15,46 @@
             <div class="form-container">
 
 
-                <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" >
+                <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
                     <div class="field">
                         <h2>What's your name?</h2>
-                        <input [(ngModel)]="contactData.name" type="text" name="name" required placeholder="Your name goes here">
+                        <input [(ngModel)]="contactData.name" type="text" name="name" required #name="ngModel"
+                            [ngClass]="{'invalid-placeholder': submitted && name.invalid}"
+                            [placeholder]="submitted && name.invalid ? 'Please enter a valid name' : 'Your name goes here'">
                     </div>
                     <div class="field">
                         <h2>What's your email?</h2>
-                        <input [(ngModel)]="contactData.email" type="email" name="email" required placeholder="youremail@email.com" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                        <input [(ngModel)]="contactData.email" type="email" name="email" required #email="ngModel"
+                            [ngClass]="{'invalid-placeholder': submitted && email.invalid}"
+                            [placeholder]="submitted && email.invalid ? 'Please enter a valid email' : 'youremail@email.com'"
+                            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
                     </div>
                     <div class="field">
                         <h2>How can I help you?</h2>
-                        <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" name="message" required placeholder="Hello Tom, I am interested in..."></textarea>
-                        
+                        <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" name="message"
+                            required [ngClass]="{'invalid-placeholder': submitted && message.invalid}"
+                            [placeholder]="submitted && message.invalid ? 'Message is too short or missing' : 'Hello Tom, I am interested in...'">
+                      </textarea>
                     </div>
                     <div class="submit">
                         <div class="box-align">
                             <label class="custom-checkbox">
-                                <input type="checkbox">
+                                <input type="checkbox" name="privacy" [(ngModel)]="contactData.agreed"
+                                    #privacy="ngModel" required>
                                 <span class="checkmark"></span>
                             </label>
-                            <p>I've read the <a href="privacy" style="color: #3DCFB6;">privacy policy</a> and agree to the processing of my data as outlined.</p>
+                            <p>I've read the <a href="privacy" style="color: #3DCFB6;">privacy policy</a> and agree to
+                                the processing of my data as outlined.</p>
+                        </div>
+                        <div *ngIf="submitted && privacy.invalid" class="error-message">
+                            <p>You must agree to the privacy policy to send a message.</p>
                         </div>
                         <div class="btn-align">
-                            <button class="custom-button"><span class="button-text">Let's Talk</span></button>
+                            <button class="custom-button" type="submit"><span class="button-text">Let's
+                                    Talk</span></button>
                         </div>
                     </div>
                 </form>
-
 
 
             </div>
