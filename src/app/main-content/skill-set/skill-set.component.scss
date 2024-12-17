@@ -169,6 +169,11 @@ section {
     overflow: hidden;
     position: relative;
 
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
     &:hover {
         border: 1px solid #3DCFB6;
 

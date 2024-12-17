@@ -234,6 +234,20 @@ section {
 
     a {
         text-decoration: none;
+        position: relative;
+        
+        &:hover {
+            &::after {
+                content: '•';
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                top: 100%;
+                margin-top: -0.3em;
+                color: #6ad7bf;
+                font-size: 1.5em;
+            }
+        }
     }
 }
 

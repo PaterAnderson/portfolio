@@ -17,16 +17,10 @@
 
                 <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
                     <div class="field">
-                        <h2 i18n="@@Whats your name">What's your name?</h2>
-                        <input 
-                            [(ngModel)]="contactData.name" 
-                            type="text" 
-                            name="name" 
-                            required 
-                            #name="ngModel"
+                        <h2  i18n="@@Whats your name">What's your name?</h2>
+                        <input [(ngModel)]="contactData.name" type="text" name="name" required #name="ngModel"
                             [ngClass]="{'invalid-placeholder': submitted && name.invalid}"
-                            [placeholder]="submitted && name.invalid ? 'Please enter a valid name' : 'Your name goes here'"
-                            i18n-placeholder="@@Your name goes here"> <!-- Hier das i18n für den placeholder -->
+                            [placeholder]="submitted && name.invalid ? 'Please enter a valid name' : 'Your name goes here'">
                     </div>
                     <div class="field">
                         <h2 i18n="@@Whats your email">What's your email?</h2>
