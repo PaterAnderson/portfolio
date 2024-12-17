@@ -2,12 +2,15 @@
   "locale": "en-US",
   "translations": {
     "headline": "Frontend Developer",
+    "check my work": "Check my work",
+    "Contact me": "Contact me",
+    "marquee": " Available for Remote work {$START_TAG_SPAN}•{$CLOSE_TAG_SPAN} Frontend Developer {$START_TAG_SPAN}•{$CLOSE_TAG_SPAN} Based in Chemnitz {$START_TAG_SPAN}•{$CLOSE_TAG_SPAN} Open to work {$START_TAG_SPAN}•{$CLOSE_TAG_SPAN} Available for Remote work {$START_TAG_SPAN}•{$CLOSE_TAG_SPAN} Frontend Developer {$START_TAG_SPAN}•{$CLOSE_TAG_SPAN} Based in Chemnitz {$START_TAG_SPAN}•{$CLOSE_TAG_SPAN} Open to work {$START_TAG_SPAN}•{$CLOSE_TAG_SPAN}",
     "angular": "Angular",
     "link": "/de",
     "languageimg": "/assets/img/header/en1.svg",
-    "me": "Über mich",
+    "me": "About me",
     "skills": "Skills",
-    "projects": "Projekte",
+    "projects": "Projects",
     "firstname": "Tom {$LINE_BREAK} Wahrenberg"
   }
 }

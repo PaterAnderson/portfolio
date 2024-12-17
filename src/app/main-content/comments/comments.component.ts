@@ -14,19 +14,19 @@ export class CommentsComponent {
 
   comments = [
     {
-      text: "Ich möchte meinen Kollegen im Frontend-Team für ihre herausragenden Beiträge anerkennen. Ihr Gespür für Design und Codierungsfähigkeiten steigert ständig unsere Projekte.",
-      name: "A. Fischer",
-      status: "Team Partner"
+      text: $localize`:@@comment one:I greatly enjoyed working with Tom! He was always professional in his interactions with team members and in his work. I highly appreciated his dedication to contributing both to the team and to the tasks at hand. With his skills, he played a key role in advancing the project and solving the technical challenges.`,
+      name: "S. Hilgert",
+      status: $localize`:@@Team Partner:Team Partner`  
     },
     {
-      text: "Sie haben eine fantastische Fähigkeit, benutzerfreundliche Oberflächen zu erstellen, die sowohl Kunden als auch Benutzer beeindrucken.",
-      name: "B. Müller",
-      status: "Team Partner"
+      text: $localize`:@@comment two:I thoroughly enjoyed working with Tom. His professionalism and dedication to the team were evident at all times. Tom's design skills significantly contributed to the success of the project and helped overcome key challenges.`,
+      name: "A. Ivkin",
+      status: $localize`:@@Team Partner:Team Partner`
     },
     {
-      text: "Darüber hinaus sind sie immer bereit, den Teamkollegen zu helfen und schaffen so eine tolle kollaborative Atmosphäre.",
-      name: "C. Schneider",
-      status: "Team Partner"
+      text: $localize`:@@comment three:Working with Tom has been a great experience. His logical thinking and ability to solve problems are outstanding. He always has an alternative solution in mind, which has been invaluable in overcoming challenges throughout the project.`,
+      name: "C. Wildhagen",
+      status: $localize`:@@Team Partner:Team Partner`
     }
   ];
 

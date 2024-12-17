@@ -5,7 +5,7 @@
             <h2>{{ project.title }}</h2>
         </div>
         <div class="about">
-            <h3>What is this project about?</h3>
+            <h3 i18n="@@What is this project about?">What is this project about?</h3>
             <p>{{ project.description }}</p>
             <div class="languages">
                 <div class="language" *ngFor="let tech of project.technologiesWithIcons">
@@ -19,12 +19,12 @@
                     <img src="/assets/img/ico/arrow_out_g.svg" alt="Arrow Icon" class="button-icon">
                 </a>
                 <a href="{{ project.link }}" class="custom-button">
-                    <span class="button-text">Live Test</span>
+                    <span class="button-text" i18n="@@Live Test">Live Test</span>
                     <img src="/assets/img/ico/arrow_out_g.svg" alt="Arrow Icon" class="button-icon">
                 </a>
             </div>
             <button class="next" (click)="goToNextProject()">
-                <span class="button-text">Next Project</span>
+                <span class="button-text" >Next Project</span>
                 <img src="/assets/img/ico/arrow_f.svg" alt="Arrow Icon" class="button-icon">
             </button>
         </div>
@@ -35,7 +35,7 @@
         </button>
         <img [src]="project.imageUrl" alt="{{ project.title }} Image">
         <button class="next" (click)="goToNextProject()">
-            <span class="button-text">Next Project</span>
+            <span class="button-text" i18n="@@Next Project">Next Project</span>
             <img src="/assets/img/ico/arrow_f.svg" alt="Arrow Icon" class="button-icon">
         </button>
     </div>

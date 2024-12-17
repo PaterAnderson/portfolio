@@ -14,7 +14,7 @@ export class ProjectsComponent {
   projects: Project[] = [
     {
       title: 'Join',
-      description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
+      description: $localize`:@@Project one description:Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.`,
       technologies: ['Angular', 'TypeScript','HTML','CSS','Firebase'],
       imageUrl: '/assets/img/projects/join_b.png',
       previewImageUrl: '/assets/img/projects/join.png',
@@ -29,7 +29,7 @@ export class ProjectsComponent {
     },
     {
       title: 'Sharkie',
-      description: 'Can you collect enough treasure and potions to transform your shark into a fierce warrior capable of taking on the orca?',
+      description: $localize`:@@Project two description:Can you collect enough treasure and potions to transform your shark into a fierce warrior capable of taking on the orca?`,
       technologies: ['HTML', 'CSS', 'JavaScript'],
       imageUrl: '/assets/img/projects/sharkie_b.png',
       previewImageUrl: '/assets/img/projects/sharkie.png',
@@ -42,7 +42,7 @@ export class ProjectsComponent {
     },
     {
       title: 'Pokédex',
-      description: 'A Pokédex application that allows you to view detailed Pokémon information, utilizing data sourced from the comprehensive PokéAPI for accurate and up-to-date stats, abilities, and more.',
+      description: $localize`:@@Project three description: A Pokédex application that allows you to view detailed Pokémon information, utilizing data sourced from the comprehensive PokéAPI for accurate and up-to-date stats, abilities, and more.`,
       technologies: ['HTML', 'CSS', 'JavaScript'],
       imageUrl: '/assets/img/projects/pokedex_b.png',
       previewImageUrl: '/assets/img/projects/pokedex.png',
