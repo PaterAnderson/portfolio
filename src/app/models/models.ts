@@ -7,4 +7,5 @@ export interface Project {
     previewImageUrl: string;
     technologiesWithIcons: { name: string; icon: string }[];
     link: string;
+    gitLink: string;
 }

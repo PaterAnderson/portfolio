@@ -8,14 +8,14 @@ import { Project } from '../../models/models';
   standalone: true,
   imports: [CommonModule, InfoCardComponent],
   templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.scss'] 
+  styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent {
   projects: Project[] = [
     {
       title: 'Join',
       description: $localize`:@@Project one description:Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.`,
-      technologies: ['Angular', 'TypeScript','HTML','CSS','Firebase'],
+      technologies: ['Angular', 'TypeScript', 'HTML', 'CSS', 'Firebase'],
       imageUrl: '/assets/img/projects/join_b.png',
       previewImageUrl: '/assets/img/projects/join.png',
       technologiesWithIcons: [
@@ -25,7 +25,8 @@ export class ProjectsComponent {
         { name: 'Angular', icon: '/assets/img/deco/angular.svg' },
         { name: 'TypeScript', icon: '/assets/img/deco/ts.svg' },
       ],
-      link: 'https://www.portfoliotw.com/join'
+      link: 'https://www.portfoliotw.com/join',
+      gitLink: 'https://github.com/PaterAnderson/Join'
     },
     {
       title: 'Sharkie',
@@ -38,7 +39,8 @@ export class ProjectsComponent {
         { name: 'CSS', icon: '/assets/img/deco/css.svg' },
         { name: 'JavaScript', icon: '/assets/img/deco/js.svg' }
       ],
-      link: 'https://www.portfoliotw.com/sharkie'
+      link: 'https://www.portfoliotw.com/sharkie',
+      gitLink: 'https://github.com/PaterAnderson/Join'
     },
     {
       title: 'Pokédex',
@@ -51,27 +53,28 @@ export class ProjectsComponent {
         { name: 'CSS', icon: '/assets/img/deco/css.svg' },
         { name: 'JavaScript', icon: '/assets/img/deco/js.svg' }
       ],
-      link: 'https://www.portfoliotw.com/pokedex'
+      link: 'https://www.portfoliotw.com/pokedex',
+      gitLink: 'https://github.com/PaterAnderson/Join'
     }
   ];
 
-  showImage: string = ''; 
+  showImage: string = '';
   showOverlay: boolean = false;
   selectedProject: Project | null = null;
-  selectedProjectIndex: number | null = null; 
-  
+  selectedProjectIndex: number | null = null;
+
   openInfoCard(project: Project, index: number) {
     this.selectedProject = project;
     this.selectedProjectIndex = index;
     this.showOverlay = true;
-    document.body.style.overflow = 'hidden'; 
-}
+    document.body.style.overflow = 'hidden';
+  }
 
-closeInfoCard() {
+  closeInfoCard() {
     this.showOverlay = false;
     this.selectedProject = null;
-    document.body.style.overflow = ''; 
-}
+    document.body.style.overflow = '';
+  }
 
   updateSelectedProject(index: number) {
     this.selectedProjectIndex = index;
