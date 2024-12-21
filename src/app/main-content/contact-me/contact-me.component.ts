@@ -24,6 +24,10 @@ export class ContactMeComponent {
   mailTest = true;
   submitted = false;
 
+  namePlaceholder = $localize`:@@Your name goes here:Your name goes here`;
+  emailPlaceholder = $localize`:@@youremail@email.com:youremail@email.com`;
+  messagePlaceholder = $localize`:@@Hello Tom, I am interested in...:Hello Tom, I am interested in...`;
+
   post = {
     endPoint: 'http://www.portfoliotw.com/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),

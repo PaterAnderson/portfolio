@@ -2,10 +2,11 @@
     <section>
         <div class="align">
             <div class="contact-me">
-                <h2  i18n="@@Contact me">Contact me</h2>
-                <h1  i18n="@@Lets work together">Let's work together</h1>
-                <h3  i18n="@@Got a problemto solve">Got a problem to solve?</h3>
-                <p  i18n="@@Contact me through...">Contact me through this form, I am interested in hearing from you, knowing your ideas and
+                <h2 i18n="@@Contact me">Contact me</h2>
+                <h1 i18n="@@Lets work together">Let's work together</h1>
+                <h3 i18n="@@Got a problemto solve">Got a problem to solve?</h3>
+                <p i18n="@@Contact me through...">Contact me through this form, I am interested in hearing from you,
+                    knowing your ideas and
                     contributing to
                     your projects with my work.<br><br>
                     Need a Frontend developer? <span style="color: #3DCFB6;">Let’s talk!</span></p>
@@ -17,25 +18,38 @@
 
                 <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
                     <div class="field">
-                        <h2  i18n="@@Whats your name">What's your name?</h2>
+                        <h2 i18n="@@Whats your name">What's your name?</h2>
                         <input [(ngModel)]="contactData.name" type="text" name="name" required #name="ngModel"
-                            [ngClass]="{'invalid-placeholder': submitted && name.invalid}"
-                            [placeholder]="submitted && name.invalid ? 'Please enter a valid name' : 'Your name goes here'">
+                            [ngClass]="{'invalid-input': submitted && name.invalid}" [placeholder]="namePlaceholder">
+
+                        <div *ngIf="submitted && name.invalid" class="error-message">
+                            <p i18n="@@please-enter-valid-name">Please enter a valid name</p>
+                        </div>
                     </div>
+
                     <div class="field">
                         <h2 i18n="@@Whats your email">What's your email?</h2>
                         <input [(ngModel)]="contactData.email" type="email" name="email" required #email="ngModel"
-                            [ngClass]="{'invalid-placeholder': submitted && email.invalid}"
-                            [placeholder]="submitted && email.invalid ? 'Please enter a valid email' : 'youremail@email.com'"
+                            [ngClass]="{'invalid-input': submitted && email.invalid}" [placeholder]="emailPlaceholder"
                             pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                        <div *ngIf="submitted && email.invalid" class="error-message">
+                            <p i18n="@@please-enter-valid-email">Please enter a valid email</p>
+                        </div>
+
                     </div>
+
+
                     <div class="field">
-                        <h2  i18n="@@How can i help you">How can I help you?</h2>
+                        <h2 i18n="@@How can i help you">How can I help you?</h2>
                         <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" name="message"
-                            required [ngClass]="{'invalid-placeholder': submitted && message.invalid}"
-                            [placeholder]="submitted && message.invalid ? 'Message is too short or missing' : 'Hello Tom, I am interested in...'">
+                            required [ngClass]="{'invalid-input': submitted && message.invalid}"
+                            [placeholder]="messagePlaceholder">
                       </textarea>
+                      <div *ngIf="submitted && message.invalid" class="error-message">
+                        <p i18n="@@message-too-short">Message is too short or missing</p>
                     </div>
+                    </div>
+
                     <div class="submit">
                         <div class="box-align">
                             <label class="custom-checkbox">
@@ -43,15 +57,20 @@
                                     #privacy="ngModel" required>
                                 <span class="checkmark"></span>
                             </label>
-                            <p  i18n="@@Ive read the">I've read the <a href="privacy" style="color: #3DCFB6;">privacy policy</a> and agree to
-                                the processing of my data as outlined.</p>
+                            <p i18n="@@Ive read the">
+                                I've read the <a href="privacy" style="color: #3DCFB6;">privacy policy</a> and agree to
+                                the processing of my data as outlined.
+                            </p>
                         </div>
+
                         <div *ngIf="submitted && privacy.invalid" class="error-message">
-                            <p  i18n="@@you must agree to">You must agree to the privacy policy to send a message.</p>
+                            <p i18n="@@you-must-agree-to">You must agree to the privacy policy to send a message.</p>
                         </div>
+
                         <div class="btn-align">
-                            <button class="custom-button" type="submit"><span class="button-text"  i18n="@@lets-talk">Let's
-                                    Talk</span></button>
+                            <button class="custom-button" type="submit">
+                                <span class="button-text" i18n="@@lets-talk">Let's Talk</span>
+                            </button>
                         </div>
                     </div>
                 </form>
