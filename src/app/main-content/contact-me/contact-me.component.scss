@@ -15,6 +15,12 @@ section {
         align-items: flex-start;
         height: 1066px;
     }
+    @media (max-width: 1000px) {
+        height: 1125px;
+    }
+    @media (max-width: 540px) {
+        height: 1175px;
+    }
 
 }
 
@@ -106,6 +112,10 @@ section {
 
     @media (max-width: 1080px) {
         width: 616px;
+    }
+
+    @media (max-width: 520px) {
+        margin-bottom: 24px;
     }
 
     @media (max-width: 640px) {

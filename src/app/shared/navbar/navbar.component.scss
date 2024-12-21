@@ -106,24 +106,12 @@ nav {
         visibility: visible;
 
     }
+    @media (max-width: 565px) {
+        right: 6vw;
+
+    }
     @media (max-width: 470px) {
-        left: 36vw;
-
-    }
-    @media (max-width: 438px) {
-        left: 33vw;
-
-    }
-    @media (max-width: 410px) {
-        left: 32vw;
-
-    }
-    @media (max-width: 388px) {
-        left: 31vw;
-
-    }
-    @media (max-width: 360px) {
-        left: 24vw;
+        right: 1vw;
 
     }
 }
@@ -137,9 +125,6 @@ nav {
     border-bottom: 1px solid #ccc;
 }
 
-.burger-menu:last-child {
-    border-bottom: none;
-}
 
 .burger-align {
     display: flex;
