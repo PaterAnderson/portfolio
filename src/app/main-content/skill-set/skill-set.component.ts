@@ -20,7 +20,7 @@ export class SkillSetComponent {
     { src: '/assets/img/ico/git2.svg', word: 'GIT' },
     { src: '/assets/img/ico/api.svg', word: 'Rest-Api' },
     { src: '/assets/img/ico/scrum.svg', word: 'Scrum' },
-    { src: '/assets/img/ico/growth.svg', word: 'Growth mindset' },
+    { src: '/assets/img/ico/growth.svg', word: $localize`:@@Growth mindset:Growth mindset` },
   ];
 
   interests = [
