@@ -10,6 +10,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: -1px;
     @media (max-width: 950px) {
         height: 1198px;
         align-items: center;

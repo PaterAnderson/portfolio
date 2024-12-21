@@ -3,11 +3,10 @@ section {
     max-width: 2560px;
     margin: 0 auto;
     height: 695px;
-    background: radial-gradient(22.43% 43.85% at 1.22% 52.45%, rgb(8, 70, 59) 0%, #1C1C1C 100%)
-        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
-    ;
+    background: radial-gradient(22.43% 43.85% at 1.22% 52.45%, rgb(8, 70, 59) 0%, #1C1C1C 100%);
     font-family: 'Karla';
     color: white;
+    margin-top: -1px;
 
     @media (max-width: 1050px) {
         height: 1310px;
