@@ -25,12 +25,17 @@ export class SkillSetComponent {
 
   interests = [
     { src: '/assets/img/ico/interests/react.svg', word: 'React' },
-    { src: '/assets/img/ico/interests/vue.svg', word: 'Vue Js' }, 
+    { src: '/assets/img/ico/interests/vue.svg', word: 'Vue Js' },
   ];
-  
+
   isInfoVisible = false;
   currentHoverIndex: number | null = null;
 
+  /**
+   * Displays information if the given index corresponds to the last image.
+   * 
+   * @param {number} index - The index of the image to check.
+   */
   showInfo(index: number) {
     if (index === this.images.length - 1) {
       this.isInfoVisible = true;
@@ -38,8 +43,11 @@ export class SkillSetComponent {
       this.isInfoVisible = false;
     }
   }
-  
+
+  /**
+   * Hides the information display.
+   */
   hideInfo() {
-    this.isInfoVisible = false; 
+    this.isInfoVisible = false;
   }
 }

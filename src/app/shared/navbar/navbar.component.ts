@@ -11,6 +11,9 @@ import { CommonModule } from '@angular/common';
 export class NavbarComponent {
   isMenuOpen = false;
 
+  /**
+   * Toggles the visibility of the menu by switching the value of `isMenuOpen`.
+   */
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
   }

@@ -62,9 +62,9 @@ export class ContactMeComponent {
   }
 
   /**
-   * Setzt alle ungültigen Formulareingabefelder im gegebenen Formular zurück.
+   * Resets all invalid form input fields in the given form.
    * 
-   * @param {NgForm} ngForm - Das Angular-Formular, dessen ungültige Felder zurückgesetzt werden sollen.
+   * @param {NgForm} ngForm - The Angular form whose invalid fields should be reset.
    */
   resetInvalidFields(ngForm: NgForm) {
     for (const controlName in ngForm.controls) {
@@ -76,10 +76,10 @@ export class ContactMeComponent {
   }
 
   /**
-   * Zeigt für 3 Sekunden einen grünen Rahmen an, nachdem die Schaltfläche gedrückt wurde.
+   * Displays a green border for 3 seconds after the button is pressed.
    * 
-   * Setzt die Eigenschaft `buttonClicked` auf true, um den Zustand der Schaltfläche anzuzeigen,
-   * und setzt sie nach 3 Sekunden wieder auf false.
+   * Sets the `buttonClicked` property to true to indicate the button's state, 
+   * and resets it back to false after 3 seconds.
    */
   showGreenBorder() {
     this.buttonClicked = true;
