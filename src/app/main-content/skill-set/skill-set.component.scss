@@ -173,11 +173,8 @@ section {
     cursor: pointer;
     overflow: hidden;
     position: relative;
-
-    a {
-        text-decoration: none;
-        color: white;
-    }
+    display: flex;
+    text-decoration: none;
 
     &:hover {
         border: 1px solid #3DCFB6;
@@ -191,6 +188,10 @@ section {
 .button-text {
     position: relative;
     display: inline-block;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
 }
 
 .skills {
