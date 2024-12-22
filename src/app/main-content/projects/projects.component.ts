@@ -63,6 +63,12 @@ export class ProjectsComponent {
   selectedProject: Project | null = null;
   selectedProjectIndex: number | null = null;
 
+  /**
+   * Öffnet die Informationskarte für ein bestimmtes Projekt.
+   * 
+   * @param {Project} project - Das Projekt, für das die Informationskarte geöffnet wird.
+   * @param {number} index - Der Index des Projekts in der Projekte-Liste.
+   */
   openInfoCard(project: Project, index: number) {
     this.selectedProject = project;
     this.selectedProjectIndex = index;
@@ -70,12 +76,21 @@ export class ProjectsComponent {
     document.body.style.overflow = 'hidden';
   }
 
+  /**
+   * Schließt die Informationskarte und stellt den Zustand der Benutzeroberfläche wieder her.
+   */
   closeInfoCard() {
     this.showOverlay = false;
     this.selectedProject = null;
     document.body.style.overflow = '';
   }
 
+  /**
+   * Aktualisiert das aktuell ausgewählte Projekt basierend auf dem angegebenen Index.
+   * 
+   * @param {number} index - Der Index des neuen Projekts in der Projekte-Liste, 
+   * welches als ausgewähltes Projekt festgelegt werden soll.
+   */
   updateSelectedProject(index: number) {
     this.selectedProjectIndex = index;
     this.selectedProject = this.projects[index];
