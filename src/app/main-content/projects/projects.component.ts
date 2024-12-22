@@ -26,7 +26,7 @@ export class ProjectsComponent {
         { name: 'TypeScript', icon: '/assets/img/deco/ts.svg' },
       ],
       link: 'https://www.portfoliotw.com/join',
-      gitLink: 'https://github.com/PaterAnderson/Join'
+      gitLink: 'https://github.com/Lukas1979/Join-Projekt'
     },
     {
       title: 'Sharkie',
@@ -40,7 +40,7 @@ export class ProjectsComponent {
         { name: 'JavaScript', icon: '/assets/img/deco/js.svg' }
       ],
       link: 'https://www.portfoliotw.com/sharkie',
-      gitLink: 'https://github.com/PaterAnderson/Join'
+      gitLink: 'https://github.com/PaterAnderson/Sharkie'
     },
     {
       title: 'Pokédex',
