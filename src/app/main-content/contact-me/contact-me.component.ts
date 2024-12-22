@@ -18,7 +18,7 @@ export class ContactMeComponent {
     name: "",
     email: "",
     message: "",
-    agreed: false // Tracking checkbox state
+    agreed: false
   }
 
   mailTest = true;
@@ -40,23 +40,14 @@ export class ContactMeComponent {
   };
 
   onSubmit(ngForm: NgForm) {
-    this.submitted = true; // Mark the form as submitted
+    this.submitted = true; 
 
-    // Console log for debugging: check form validity and checkbox state
-    console.log('Form submitted. Checking validity...');
-    console.log('Form Valid:', ngForm.valid);
-    console.log('Checkbox Checked:', this.contactData.agreed);
-    console.log('Form Data:', this.contactData);
-
-    // Überprüfen, ob das Formular gültig ist und die Checkbox akzeptiert wurde
     if (ngForm.valid && this.contactData.agreed) {
-      console.log('Sending data...'); // Log before sending the data
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-            console.log('Form successfully submitted', response);
             ngForm.resetForm();
-            this.submitted = false; // Reset the form state
+            this.submitted = false; 
           },
           error: (error) => {
             console.error('Error submitting form', error);
@@ -64,9 +55,6 @@ export class ContactMeComponent {
           complete: () => console.info('send post complete'),
         });
     } else {
-      // Log if the form is invalid
-      console.log('Form invalid or checkbox not checked. Resetting invalid fields...');
-      // Reset the form fields for only invalid controls
       this.resetInvalidFields(ngForm);
     }
   }
@@ -75,7 +63,7 @@ export class ContactMeComponent {
     for (const controlName in ngForm.controls) {
       const control = ngForm.controls[controlName];
       if (control.invalid) {
-        control.reset(); // Reset invalid fields
+        control.reset();
       }
     }
   }
