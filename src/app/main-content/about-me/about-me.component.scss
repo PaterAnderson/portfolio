@@ -9,10 +9,10 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: -1px;
+    margin-top: -2px;
 
     @media (max-width: 950px) {
-        height: 1198px;
+        height: 1400px;
         align-items: center;
         flex-direction: row;
     }
