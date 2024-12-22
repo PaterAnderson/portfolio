@@ -25,7 +25,7 @@ export class ProjectsComponent {
         { name: 'Angular', icon: '/assets/img/deco/angular.svg' },
         { name: 'TypeScript', icon: '/assets/img/deco/ts.svg' },
       ],
-      link: 'https://www.portfoliotw.com/join',
+      link: 'https://www.join.portfoliotw.com',
       gitLink: 'https://github.com/Lukas1979/Join-Projekt'
     },
     {
@@ -39,7 +39,7 @@ export class ProjectsComponent {
         { name: 'CSS', icon: '/assets/img/deco/css.svg' },
         { name: 'JavaScript', icon: '/assets/img/deco/js.svg' }
       ],
-      link: 'https://www.portfoliotw.com/sharkie',
+      link: 'https://www.sharkie.portfoliotw.com',
       gitLink: 'https://github.com/PaterAnderson/Sharkie'
     },
     {
@@ -53,7 +53,7 @@ export class ProjectsComponent {
         { name: 'CSS', icon: '/assets/img/deco/css.svg' },
         { name: 'JavaScript', icon: '/assets/img/deco/js.svg' }
       ],
-      link: 'https://www.portfoliotw.com/pokedex',
+      link: 'https://www.pokedex.portfoliotw.com',
       gitLink: 'https://github.com/PaterAnderson/Join'
     }
   ];
