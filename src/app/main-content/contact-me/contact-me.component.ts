@@ -6,7 +6,7 @@ import { FormsModule, NgForm } from '@angular/forms';
 @Component({
   selector: 'app-contact-me',
   standalone: true,
-  imports: [ CommonModule ,FormsModule],
+  imports: [CommonModule, FormsModule],
   templateUrl: './contact-me.component.html',
   styleUrls: ['./contact-me.component.scss']
 })
@@ -23,7 +23,7 @@ export class ContactMeComponent {
 
   mailTest = true;
   submitted = false;
-  buttonClicked = false; 
+  buttonClicked = false;
 
   namePlaceholder = $localize`:@@Your name goes here:Your name goes here`;
   emailPlaceholder = $localize`:@@youremail@email.com:youremail@email.com`;
@@ -41,15 +41,15 @@ export class ContactMeComponent {
   };
 
   onSubmit(ngForm: NgForm) {
-    this.submitted = true; 
+    this.submitted = true;
 
     if (ngForm.valid && this.contactData.agreed) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
             ngForm.resetForm();
-            this.submitted = false; 
-            this.showGreenBorder(); 
+            this.submitted = false;
+            this.showGreenBorder();
           },
           error: (error) => {
             console.error('Error submitting form', error);
@@ -61,6 +61,11 @@ export class ContactMeComponent {
     }
   }
 
+  /**
+   * Setzt alle ungültigen Formulareingabefelder im gegebenen Formular zurück.
+   * 
+   * @param {NgForm} ngForm - Das Angular-Formular, dessen ungültige Felder zurückgesetzt werden sollen.
+   */
   resetInvalidFields(ngForm: NgForm) {
     for (const controlName in ngForm.controls) {
       const control = ngForm.controls[controlName];
@@ -70,11 +75,16 @@ export class ContactMeComponent {
     }
   }
 
-
+  /**
+   * Zeigt für 3 Sekunden einen grünen Rahmen an, nachdem die Schaltfläche gedrückt wurde.
+   * 
+   * Setzt die Eigenschaft `buttonClicked` auf true, um den Zustand der Schaltfläche anzuzeigen,
+   * und setzt sie nach 3 Sekunden wieder auf false.
+   */
   showGreenBorder() {
     this.buttonClicked = true;
     setTimeout(() => {
-      this.buttonClicked = false; 
+      this.buttonClicked = false;
     }, 3000);
   }
 }
