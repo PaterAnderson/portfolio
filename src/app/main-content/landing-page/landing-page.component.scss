@@ -59,8 +59,8 @@ section {
 .custom-button {
     text-decoration: none;
     background-color: transparent;
-    width: 172px;
-    height: 60px;
+    width: 120px;
+    height: 48px;
     border: 1px solid #ffffff;
     border-radius: 100px;
     padding-left: 24px;
@@ -81,21 +81,9 @@ section {
         }
     }
 
-    @media (max-width: 850px) {
-        width: 20vw;
-    }
-
-    @media (max-width: 801px) {
-        width: 161px;
-    }
-
     @media (max-width: 500px) {
-        width: 126px;
+        width: 76px;
         height: 38px;
-    }
-
-    @media (max-width: 420px) {
-        width: 80px;
     }
 
 }

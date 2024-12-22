@@ -290,7 +290,7 @@ section {
         border: 1px solid #3DCFB6;
 
         .button-text {
-            animation: moveInOut 5.5s linear infinite;
+            animation: moveInOut 4.5s linear infinite;
         }
     }
 }
@@ -298,6 +298,7 @@ section {
 .button-text {
     position: relative;
     display: inline-block;
+    width: 100%;
 }
 
 .green-border {

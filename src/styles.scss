@@ -1,8 +1,7 @@
 * {
     margin: 0;
     scroll-behavior: smooth;
-
-
+    scroll-padding-top: 80px;
 }
 
 .background {
@@ -59,11 +58,11 @@
   }
 
   50% {
-      transform: translateX(-150%);
+      transform: translateX(-120%);
   }
 
   50.001% {
-      transform: translateX(150%);
+      transform: translateX(120%);
   }
 
   100% {
