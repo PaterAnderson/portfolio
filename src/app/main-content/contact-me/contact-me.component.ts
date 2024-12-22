@@ -23,6 +23,7 @@ export class ContactMeComponent {
 
   mailTest = true;
   submitted = false;
+  buttonClicked = false; 
 
   namePlaceholder = $localize`:@@Your name goes here:Your name goes here`;
   emailPlaceholder = $localize`:@@youremail@email.com:youremail@email.com`;
@@ -48,6 +49,7 @@ export class ContactMeComponent {
           next: (response) => {
             ngForm.resetForm();
             this.submitted = false; 
+            this.showGreenBorder(); 
           },
           error: (error) => {
             console.error('Error submitting form', error);
@@ -66,5 +68,13 @@ export class ContactMeComponent {
         control.reset();
       }
     }
+  }
+
+
+  showGreenBorder() {
+    this.buttonClicked = true;
+    setTimeout(() => {
+      this.buttonClicked = false; 
+    }, 3000);
   }
 }

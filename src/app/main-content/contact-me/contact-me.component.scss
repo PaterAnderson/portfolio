@@ -161,7 +161,7 @@ section {
             }
 
             &.invalid-placeholder::placeholder {
-                color: rgb(255, 0, 0); // Set placeholder color to red when the input is invalid
+                color: rgb(255, 0, 0);
             }
 
             @media (max-width: 455px) {
@@ -299,3 +299,8 @@ section {
     position: relative;
     display: inline-block;
 }
+
+.green-border {
+    border: 2px solid rgb(12, 236, 12);
+    transition: border 0.3s ease;
+  }
