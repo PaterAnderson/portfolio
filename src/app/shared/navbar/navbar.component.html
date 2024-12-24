@@ -20,8 +20,8 @@
                 <a href="#me" i18n="@@me">About me</a>
                 <a href="#skills" i18n="@@skills">Skills</a>
                 <a href="#projects" i18n="@@projects">Projects</a>
-                <a i18n-href="@@link" href="/de">
-                    <img i18n-src="@@languageimg" src="/assets/img/header/en1.svg">
+                <a (click)="toggleLanguage()">
+                    <img src="/assets/img/header/{{ currentLanguage === 'de' ? 'de1' : 'en1' }}.svg">
                 </a>
             </div>
         </div>

@@ -47,20 +47,17 @@ section {
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
     .privacy-policy {
         width: 60vw;
         h1 {
-            font-size: 48px;
-            @media (max-width: 400px) {
-                font-size: 24px;
-            }
-        }
-        h2 {
-            font-size: 32px;
+            font-size: 24px;
             @media (max-width: 400px) {
                 font-size: 16px;
             }
+        }
+        h2 {
+            font-size: 16px;
         }
         p {
             font-size: 12px;
