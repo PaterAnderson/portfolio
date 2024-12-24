@@ -31,7 +31,7 @@
                         <h2 i18n="@@Whats your email">What's your email?</h2>
                         <input [(ngModel)]="contactData.email" type="email" name="email" required #email="ngModel"
                             [ngClass]="{'invalid-input': submitted && email.invalid}" [placeholder]="emailPlaceholder"
-                            pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                            pattern="^(?!.*--)(?!.*\.\.)(?!.*-\.)(?!.*-\.)[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
                         <div *ngIf="submitted && email.invalid" class="error-message">
                             <p i18n="@@please-enter-valid-email">Please enter a valid email</p>
                         </div>
