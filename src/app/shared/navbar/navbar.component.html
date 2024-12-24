@@ -10,16 +10,16 @@
         </div>
         <div class="logo-name">
             <img src="/assets/img/me/logo.svg" alt="">
-            <p i18n="@@firstname">Tom <br> Wahrenberg</p>
+            <a i18n-href="@@link" href="/">Tom <br> Wahrenberg</a>
         </div>
         <button class="burger" (click)="toggleMenu()">
             <img src="/assets/img/ico/menu.svg">
         </button>
         <div class="burger-menu" [class.show]="isMenuOpen">
             <div class="burger-align">
-                <a href="#me" i18n="@@me">About me</a>
-                <a href="#skills" i18n="@@skills">Skills</a>
-                <a href="#projects" i18n="@@projects">Projects</a>
+                <a href="#me" i18n="@@me" (click)="toggleMenu()">About me</a>
+                <a href="#skills" i18n="@@skills" (click)="toggleMenu()">Skills</a>
+                <a href="#projects" i18n="@@projects" (click)="toggleMenu()">Projects</a>
                 <a (click)="toggleLanguage()">
                     <img src="/assets/img/header/{{ currentLanguage === 'de' ? 'de1' : 'en1' }}.svg">
                 </a>
