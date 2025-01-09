@@ -30,7 +30,7 @@ export class ContactMeComponent {
   messagePlaceholder = $localize`:@@Hello Tom, I am interested in...:Hello Tom, I am interested in...`;
 
   post = {
-    endPoint: 'http://www.portfoliotw.com/sendMail.php',
+    endPoint: 'https://www.tom-wahrenberg.com/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
