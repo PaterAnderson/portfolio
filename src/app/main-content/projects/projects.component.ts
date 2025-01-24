@@ -43,7 +43,7 @@ export class ProjectsComponent {
       gitLink: 'https://github.com/PaterAnderson/Sharkie'
     },
     {
-      title: 'Pokédex',
+      title: 'DABubble',
       description: $localize`:@@Project three description: A Pokédex application that allows you to view detailed Pokémon information, utilizing data sourced from the comprehensive PokéAPI for accurate and up-to-date stats, abilities, and more.`,
       technologies: ['HTML', 'CSS', 'JavaScript'],
       imageUrl: '/assets/img/projects/pokedex_b.png',
@@ -53,7 +53,7 @@ export class ProjectsComponent {
         { name: 'CSS', icon: '/assets/img/deco/css.svg' },
         { name: 'JavaScript', icon: '/assets/img/deco/js.svg' }
       ],
-      link: 'https://www.pokedex.portfoliotw.com',
+      link: 'https://dabubble.tom-wahrenberg.com',
       gitLink: 'https://github.com/PaterAnderson/Join'
     }
   ];
