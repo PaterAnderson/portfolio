@@ -33,7 +33,7 @@
         <button class="close" (click)="onClose()">
             <img src="/assets/img/ico/close.svg">
         </button>
-        <img [src]="project.imageUrl" alt="{{ project.title }} Image">
+        <img class="big-img" [src]="project.imageUrl" alt="{{ project.title }} Image">
         <button class="next" (click)="goToNextProject()">
             <span class="button-text" i18n="@@Next Project">Next Project</span>
             <img src="/assets/img/ico/arrow_f.svg" alt="Arrow Icon" class="button-icon">

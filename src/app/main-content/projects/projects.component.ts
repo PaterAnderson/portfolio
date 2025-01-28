@@ -16,7 +16,7 @@ export class ProjectsComponent {
       title: 'Join',
       description: $localize`:@@Project one description:Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.`,
       technologies: ['Angular', 'TypeScript', 'HTML', 'CSS', 'Firebase'],
-      imageUrl: '/assets/img/projects/join_b.png',
+      imageUrl: '/assets/img/projects/join2.png',
       previewImageUrl: '/assets/img/projects/join.png',
       technologiesWithIcons: [
         { name: 'HTML', icon: '/assets/img/deco/html.svg' },
@@ -46,8 +46,8 @@ export class ProjectsComponent {
       title: 'DABubble',
       description: $localize`:@@Project three description: A Pokédex application that allows you to view detailed Pokémon information, utilizing data sourced from the comprehensive PokéAPI for accurate and up-to-date stats, abilities, and more.`,
       technologies: ['HTML', 'CSS', 'JavaScript'],
-      imageUrl: '/assets/img/projects/pokedex_b.png',
-      previewImageUrl: '/assets/img/projects/pokedex.png',
+      imageUrl: '/assets/img/projects/dabubble.png',
+      previewImageUrl: '/assets/img/projects/dabubble_pre.png',
       technologiesWithIcons: [
         { name: 'HTML', icon: '/assets/img/deco/html.svg' },
         { name: 'CSS', icon: '/assets/img/deco/css.svg' },
