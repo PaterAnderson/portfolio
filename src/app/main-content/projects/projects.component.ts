@@ -44,7 +44,7 @@ export class ProjectsComponent {
     },
     {
       title: 'DABubble',
-      description: $localize`:@@Project three description: A Pokédex application that allows you to view detailed Pokémon information, utilizing data sourced from the comprehensive PokéAPI for accurate and up-to-date stats, abilities, and more.`,
+      description: $localize`:@@Project three description: This application is a single-page messenger designed for seamless communication between users. It allows individuals to send and receive messages instantly, fostering effortless conversation and connection.`,
       technologies: ['HTML', 'CSS', 'JavaScript'],
       imageUrl: '/assets/img/projects/dabubble.png',
       previewImageUrl: '/assets/img/projects/dabubble_pre.png',
