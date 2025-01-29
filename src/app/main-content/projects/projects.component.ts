@@ -54,7 +54,7 @@ export class ProjectsComponent {
         { name: 'JavaScript', icon: '/assets/img/deco/js.svg' }
       ],
       link: 'https://dabubble.tom-wahrenberg.com',
-      gitLink: 'https://github.com/PaterAnderson/Join'
+      gitLink: 'https://github.com/PaterAnderson/dabubble'
     }
   ];
 
