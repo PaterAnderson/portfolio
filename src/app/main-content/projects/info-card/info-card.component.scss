@@ -12,7 +12,7 @@ section {
 
     @media (max-width: 1270px) {
         width: 366px;
-        height: 890px;
+        height: 650px;
         flex-direction: column-reverse;
         justify-content: flex-end;
     }
@@ -42,6 +42,7 @@ section {
 
 
     @media (max-width: 1270px) {
+        margin-top: -20px;
         margin-left: 12px;
         margin-top: 0;
         gap: 0;
@@ -50,7 +51,7 @@ section {
     }
 
     @media (max-width: 366px) {
-        gap: 20px;
+        gap: 10px;
     }
 }
 
@@ -89,18 +90,23 @@ section {
     @media (max-width: 1270px) {
         display: block;
         width: 280px;
+        height: 100px;
 
         h1 {
-            font-size: 72px;
+            font-size: 48px;
+            line-height: 38px;
         }
 
         h2 {
-            font-size: 56px;
+            font-size: 48px;
         }
     }
 
     @media (max-width: 366px) {
         height: auto;
+        h1,h2 {
+            font-size: 40px;
+        }
     }
 }
 
@@ -254,33 +260,46 @@ section {
 
     @media (max-width: 1270px) {
         margin-right: 12px;
-        margin-bottom: 28px;
-        margin-top: 24px;
+        margin-bottom: -23px;
 
         button:nth-child(3) {
             display: none;
         }
-
-        img:nth-child(2) {
-            width: 342px;
-            height: 216px;
-
-            @media (max-width: 366px) {
-                width: 276px;
-            }
-        }
     }
 
     @media (max-width: 366px) {
-        margin-bottom: 0;
+        margin-bottom: -35px;
     }
 
+}
+
+.align-img {
+    @media (max-width: 1270px) {
+        position: relative;
+        top: -35px;
+        right: 75px;
+    }
+
+    @media (max-width: 366px) {
+        top: -42px;
+        right: 57px;
+    }
 }
 
 .big-img {
     width: 520px;
     height: 370px;
     object-fit: cover;
+
+    @media (max-width: 1270px) {
+        width: 265px;
+        height: 172px;
+    }
+
+    @media (max-width: 366px) {
+        width: 219px;
+        height: 132px;
+    }
 }
 
 .close {
