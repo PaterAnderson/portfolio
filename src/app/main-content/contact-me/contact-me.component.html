@@ -1,7 +1,7 @@
 <div class="background">
     <section>
         <div class="align">
-            <div class="contact-me">
+            <div data-aos="zoom-out-right" class="contact-me">
                 <h2 i18n="@@Contact me">Contact me</h2>
                 <h1 i18n="@@Lets work together">Let's work together</h1>
                 <h3 i18n="@@Got a problemto solve">Got a problem to solve?</h3>
@@ -16,7 +16,7 @@
             <div class="form-container">
 
 
-                <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+                <form data-aos="zoom-in" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
                     <div class="field">
                         <h2 i18n="@@Whats your name">What's your name?</h2>
                         <input [(ngModel)]="contactData.name" type="text" name="name" required #name="ngModel"

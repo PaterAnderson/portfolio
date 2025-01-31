@@ -276,8 +276,8 @@ section {
     position: absolute;
     background-color: white;
     border-radius: 16px;
-    top: 210px;
-    left: 320px;
+    top: -131px;
+    left: -31px;
     opacity: 1;
     z-index: 10;
     display: flex;
@@ -288,33 +288,21 @@ section {
     color: #3DCFB6;
 
     @media (max-width: 1350px) {
-        top: 213px;
-        left: 237px;
-    }
-
-    @media (max-width: 1215px) {
-        top: 178px;
-        left: 179px;
+        top: -128px;
+        left: -52px;
     }
 
     @media (max-width: 1050px) {
-        top: 263px;
-        left: 169px;
+        left: -23px;
     }
 
     @media (max-width: 550px) {
-        top: 263px;
-        left: 23vw;
-    }
-
-    @media (max-width: 535px) {
-        top: 282px;
-        left: 23vw;
+        left: -34px;
     }
 
     @media (max-width: 360px) {
-        top: 202px;
-        left: 16vw;
+        top: -133px;
+        left: -54px;
     }
 }
 

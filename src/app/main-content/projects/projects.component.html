@@ -1,17 +1,19 @@
 <div class="background">
     <section>
         <div class="description-box">
-            <div class="description">
+            <div data-aos="zoom-out" class="description">
                 <h2>Portfolio</h2>
                 <h1 i18n="@@Featured Projects">Featured Projects</h1>
-                <p  i18n="@@explore a selection">Explore a selection of my work here - Interact with projects to see my skills in action.</p>
+                <p i18n="@@explore a selection">Explore a selection of my work here - Interact with projects to see my
+                    skills in action.</p>
             </div>
 
             <div>
                 <div class="seperator"></div>
                 <div class="template" *ngFor="let project of projects, let i = index">
-                    <div class="project" (mouseenter)="showImage = project.imageUrl"
-                        (mouseleave)="showImage = '' " (click)="openInfoCard(project, i)">
+                    <div class="project" (mouseenter)="showImage = project.imageUrl" (mouseleave)="showImage = '' "
+                        (click)="openInfoCard(project, i)" [attr.data-aos]="i % 2 === 0 ? 'fade-left' : 'fade-right'" 
+                        data-aos-duration="2000">
                         <div class="content">
                             <div class="title-with-image">
                                 <h3>{{ project.title }}</h3>
@@ -23,7 +25,8 @@
                                 <span *ngFor="let tech of project.technologies">{{ tech }}</span>
                             </p>
                             <div class="project-image" *ngIf="showImage === project.imageUrl">
-                                <img class="small-img" [src]="project.previewImageUrl" alt="{{ project.title }} Image" />
+                                <img class="small-img" [src]="project.previewImageUrl"
+                                    alt="{{ project.title }} Image" />
                                 <img src="/assets/img/deco/lines.svg">
                             </div>
                         </div>

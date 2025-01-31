@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-skill-set',
@@ -9,6 +9,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./skill-set.component.scss']
 })
 export class SkillSetComponent {
+
   images = [
     { src: '/assets/img/ico/html.svg', word: 'HTML' },
     { src: '/assets/img/ico/css.svg', word: 'CSS' },

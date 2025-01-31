@@ -1,7 +1,7 @@
 <div class="background">
     <section>
         <div class="align">
-            <div class="description">
+            <div data-aos="fade-up" class="description">
                 <h2 i18n="@@Technologies">Technologies</h2>
                 <div class="container">
                     <div class="center">
@@ -27,7 +27,8 @@
                 </div>
             </div>
             <div class="skills">
-                <div class="image-item" *ngFor="let image of images; let i = index">
+                <div class="image-item" *ngFor="let image of images; let i = index" data-aos="flip-left" 
+                [attr.data-aos-delay]="i * 200">
                     <img [src]="image.src" alt="{{ image.word }}" (mouseenter)="showInfo(i)"
                         (mouseleave)="hideInfo()" />
                     <p>{{ image.word }}</p>
