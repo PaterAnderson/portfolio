@@ -23,7 +23,7 @@ export class ProjectsComponent {
         { name: 'CSS', icon: '/assets/img/deco/css.svg' },
         { name: 'Firebase', icon: '/assets/img/deco/firebase.svg' },
         { name: 'Angular', icon: '/assets/img/deco/angular.svg' },
-        { name: 'TypeScript', icon: '/assets/img/deco/ts.svg' },
+        { name: 'TypeScript', icon: '/assets/img/deco/ts.svg' }
       ],
       link: 'https://join.tom-wahrenberg.com',
       gitLink: 'https://github.com/Lukas1979/Join-Projekt'
@@ -45,13 +45,15 @@ export class ProjectsComponent {
     {
       title: 'DABubble',
       description: $localize`:@@Project three description: This application is a single-page messenger designed for seamless communication between users. It allows individuals to send and receive messages instantly, fostering effortless conversation and connection.`,
-      technologies: ['HTML', 'CSS', 'JavaScript'],
+      technologies: ['Angular', 'TypeScript', 'HTML', 'CSS', 'Firebase'],
       imageUrl: '/assets/img/projects/dabubble.png',
       previewImageUrl: '/assets/img/projects/dabubble_pre.png',
       technologiesWithIcons: [
         { name: 'HTML', icon: '/assets/img/deco/html.svg' },
         { name: 'CSS', icon: '/assets/img/deco/css.svg' },
-        { name: 'JavaScript', icon: '/assets/img/deco/js.svg' }
+        { name: 'Firebase', icon: '/assets/img/deco/firebase.svg' },
+        { name: 'Angular', icon: '/assets/img/deco/angular.svg' },
+        { name: 'TypeScript', icon: '/assets/img/deco/ts.svg' }
       ],
       link: 'https://dabubble.tom-wahrenberg.com',
       gitLink: 'https://github.com/PaterAnderson/dabubble'
