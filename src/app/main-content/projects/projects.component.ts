@@ -44,7 +44,7 @@ export class ProjectsComponent {
     },
     {
       title: 'DABubble',
-      description: $localize`:@@Project three description: This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.`,
+      description: $localize`:@@Project three description: A Discord/Slack clone, designed as a Single Page Application that offers real-time messaging and a clear channel structure.`,
       technologies: ['Angular', 'TypeScript', 'HTML', 'CSS', 'Firebase'],
       imageUrl: '/assets/img/projects/dabubble.png',
       previewImageUrl: '/assets/img/projects/dabubble_pre.png',

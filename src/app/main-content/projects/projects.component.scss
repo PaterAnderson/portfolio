@@ -132,7 +132,9 @@ section {
         @media (max-width: 410px) {
             font-size: 10px;
         }
-
+    }
+    @media (max-width: 525px) {
+        width: 100vw;
     }
 }
 
