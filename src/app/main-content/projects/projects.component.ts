@@ -30,7 +30,7 @@ export class ProjectsComponent {
     },
     {
       title: 'Sharkie',
-      description: $localize`:@@Project two description:Can you collect enough treasure and potions to transform your shark into a fierce warrior capable of taking on the orca?`,
+      description: $localize`:@@Project two description:A simple Jump-and-Run game based on an object-oriented approach. Help sharkie to find coins and poison bottles to fight against the killer whale.`,
       technologies: ['HTML', 'CSS', 'JavaScript'],
       imageUrl: '/assets/img/projects/sharkie_b.png',
       previewImageUrl: '/assets/img/projects/sharkie.png',
@@ -44,7 +44,7 @@ export class ProjectsComponent {
     },
     {
       title: 'DABubble',
-      description: $localize`:@@Project three description: This application is a single-page messenger designed for seamless communication between users. It allows individuals to send and receive messages instantly, fostering effortless conversation and connection.`,
+      description: $localize`:@@Project three description: This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.`,
       technologies: ['Angular', 'TypeScript', 'HTML', 'CSS', 'Firebase'],
       imageUrl: '/assets/img/projects/dabubble.png',
       previewImageUrl: '/assets/img/projects/dabubble_pre.png',
