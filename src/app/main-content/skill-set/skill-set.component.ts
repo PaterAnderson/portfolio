@@ -17,6 +17,7 @@ export class SkillSetComponent {
     { src: '/assets/img/ico/material.svg', word: 'Material Design' },
     { src: '/assets/img/ico/ts.svg', word: 'TypeScript' },
     { src: '/assets/img/ico/angular.svg', word: $localize`:@@angular:Angular` },
+    { src: '/assets/img/ico/php.svg', word: 'PHP' },
     { src: '/assets/img/ico/firebase.svg', word: 'Firebase' },
     { src: '/assets/img/ico/git2.svg', word: 'GIT' },
     { src: '/assets/img/ico/api.svg', word: 'Rest-Api' },

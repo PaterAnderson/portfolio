@@ -26,7 +26,7 @@ export class ProjectsComponent {
         { name: 'TypeScript', icon: '/assets/img/deco/ts.svg' }
       ],
       link: 'https://join.tom-wahrenberg.com',
-      gitLink: 'https://github.com/Lukas1979/Join-Projekt'
+      gitLink: 'https://github.com/PaterAnderson/Join'
     },
     {
       title: 'Sharkie',
