@@ -251,6 +251,11 @@ section {
     top: 795.77px;
     overflow: hidden;
     transform: rotate(357deg);
+
+    @media (max-width: 950px) {
+        width: 100vw;
+        transform: none;
+    }
 }
 
 .message-bar {
